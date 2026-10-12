@@ -903,9 +903,9 @@ window.PORTFOLIO_COPY = {
     "zh-Hant": "作品集網站 · 2026/09–10"
   },
   "project.08.production": {
-    "ja": "構成・文章 / デザイン / 写真の選定 / 実装",
-    "en": "Content structure and copy / Design / Photo selection / Implementation",
-    "zh-Hant": "內容結構與文案 / 設計 / 照片挑選 / 實作"
+    "ja": "構成・内容整理 / 写真の選定 / 画面と操作の調整 / 実機での確認\n\nHTML・CSS・JavaScriptによる実装は、主にCodexを使用しました。デザイン案や文章の整理にも活用しています。私は素材や参考デザインを用意し、提案を実際の画面で確認しながら、見た目や動き、掲載内容の修正方針を決めました。",
+    "en": "Content structure and organisation / Photo selection / Visual and interaction refinement / Testing on my phone\n\nThe HTML, CSS and JavaScript implementation was primarily completed using Codex, which also helped with design proposals and copy. I provided assets and design references, reviewed the resulting pages and decided how to revise the visuals, motion and content.",
+    "zh-Hant": "內容結構與整理 / 照片挑選 / 畫面與操作方式調整 / 手機實測\n\nHTML、CSS 和 JavaScript 的程式實作主要由 Codex 完成，設計方案與文案整理也使用了 Codex 協助。我提供素材與設計參考，查看實際畫面，再決定外觀、動態及內容的修改方向。"
   },
   "project.08.overview": {
     "ja": "Webデザインの就職活動に向けて、制作した作品と自分の背景をまとめたポートフォリオサイトです。作品の見た目だけでなく、制作目的や情報の並べ方、自分が担当した部分を紹介しています。",
