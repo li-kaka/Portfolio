@@ -71,7 +71,7 @@ Loading appears for opening or reloading Home and returning from a case study. C
 
 Showcase presents one large central project with smaller adjacent projects, so each project can receive attention. Eight numbered controls and scrolling change the active project. The main image opens its case study.
 
-`View all works` switches to an overview; `Back to showcase` returns to the focused presentation. Preserve both browsing paths and the current display order:
+`View all works` switches to an overview; `Back to showcase` returns to the focused presentation. On desktop, preserve both browsing paths. At widths of 620px or below, show only the All works list, with no showcase controls or scroll steps. Initialise this view before the loading screen finishes, so Work does not reserve showcase scroll space. Keep the current display order:
 
 季の美 → MOMENTS IN INAGE → 春の手帖 → スノースケープ湯沢 → HAL Boulangerie → CAFÉ de PARIS → COCOON NAVIGATION → PORTFOLIO.
 

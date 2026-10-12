@@ -938,9 +938,9 @@ window.PORTFOLIO_COPY = {
     "zh-Hant": "約14天"
   },
   "project.08.views": {
-    "ja": "作品を一つずつ見るShowcaseと、全作品を見渡せるAll worksを切り替えられます。",
-    "en": "Switch between Showcase to view one project at a time and All works for an overview of every project.",
-    "zh-Hant": "可在逐件觀看的 Showcase 與瀏覽全部作品的 All works 之間切換。"
+    "ja": "パソコンでは、作品を一つずつ見るShowcaseと、全作品を確認できるAll worksを切り替えられます。スマートフォンでは一覧だけを表示し、通常のスクロールで作品を探せるようにしています。",
+    "en": "On desktop, users can switch between Showcase to focus on one project and All works to browse the full collection. Mobile uses only the overview, so users can find projects by scrolling normally.",
+    "zh-Hant": "電腦版可在逐件觀看的 Showcase 與瀏覽全部作品的 All works 之間切換。手機版只顯示作品一覽，方便使用者以一般捲動方式尋找作品。"
   },
   "ui.designCaption.desktop": {
     "ja": "デスクトップ版",
@@ -966,5 +966,10 @@ window.PORTFOLIO_COPY = {
     "ja": "校内ナビゲーション",
     "en": "",
     "zh-Hant": "校內導覽"
+  },
+  "project.08.mobileDesignNote": {
+    "ja": "スマートフォン版の初期案です。画像はShowcaseを採用していた時点のものです。現在は作品を探しやすいよう、All worksの一覧表示に変更しています。",
+    "en": "Earlier mobile design with Showcase. The current mobile site uses the All works overview instead, so users can browse projects more directly.",
+    "zh-Hant": "手機版初期設計圖，展示當時使用 Showcase 的版本。目前已改為 All works 一覽，讓使用者更直接地瀏覽作品。"
   }
 };

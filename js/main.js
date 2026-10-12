@@ -368,50 +368,64 @@
   projectSteps.forEach((step) => projectObserver.observe(step));
 
   if (overviewButton && overviewGrid) {
+    const mobileWork = window.matchMedia('(max-width: 620px)');
     let showcaseScrollPosition = 0;
+    let desktopOverview = false;
 
-    overviewButton.hidden = false;
-    overviewButton.addEventListener('click', () => {
-      const opening = overviewGrid.hidden;
+    function buildOverview() {
+      if (overviewGrid.childElementCount) return;
+      projects.forEach((project) => {
+        const link = document.createElement('a');
+        const image = document.createElement('img');
+        const title = document.createElement('strong');
+        const meta = document.createElement('small');
 
-      // Build the overview once, from the same projects as the showcase.
-      if (opening && !overviewGrid.childElementCount) {
-        projects.forEach((project) => {
-          const link = document.createElement('a');
-          const image = document.createElement('img');
-          const title = document.createElement('strong');
-          const meta = document.createElement('small');
+        link.className = 'works-overview-card';
+        link.href = project.url;
+        image.src = project.image.replace('-1600.webp', '-600.webp');
+        image.srcset = `${image.getAttribute('src')} 600w, ${project.image.replace('-1600.webp', '-960.webp')} 960w`;
+        image.sizes = '(max-width: 620px) calc(100vw - 40px), (max-width: 820px) 44vw, 30vw';
+        image.width = project.width;
+        image.height = project.height;
+        image.alt = text('ui.mockupAlt', { title: projectName(project) });
 
-          link.className = 'works-overview-card';
-          link.href = project.url;
-          image.src = project.image.replace('-1600.webp', '-600.webp');
-          image.srcset = `${image.getAttribute('src')} 600w, ${project.image.replace('-1600.webp', '-960.webp')} 960w`;
-          image.sizes = '(max-width: 620px) calc(100vw - 40px), (max-width: 820px) 44vw, 30vw';
-          image.width = project.width;
-          image.height = project.height;
-          image.alt = text('ui.mockupAlt', { title: projectName(project) });
+        image.loading = 'lazy';
+        image.decoding = 'async';
+        title.dataset.i18n = `${projectKey(project)}.name`;
+        title.dataset.i18nLang = 'en';
+        title.lang = 'en';
+        title.textContent = projectName(project);
+        meta.dataset.i18n = `${projectKey(project)}.meta`;
+        meta.dataset.i18nLang = 'en';
+        meta.lang = 'en';
+        meta.textContent = text(meta.dataset.i18n);
+        link.append(image, title, meta);
+        overviewGrid.append(link);
+      });
+    }
 
-          image.loading = 'lazy';
-          image.decoding = 'async';
-          title.dataset.i18n = `${projectKey(project)}.name`;
-          title.dataset.i18nLang = 'en';
-          title.lang = 'en';
-          title.textContent = projectName(project);
-          meta.dataset.i18n = `${projectKey(project)}.meta`;
-          meta.dataset.i18nLang = 'en';
-          meta.lang = 'en';
-          meta.textContent = text(meta.dataset.i18n);
-          link.append(image, title, meta);
-          overviewGrid.append(link);
-        });
-      }
-
-      if (opening) showcaseScrollPosition = window.scrollY;
+    function setWorkView(opening) {
+      if (opening) buildOverview();
       workSection.classList.toggle('is-overview', opening);
       overviewGrid.hidden = !opening;
+      overviewButton.hidden = mobileWork.matches;
       overviewButton.setAttribute('aria-expanded', String(opening));
       overviewButton.dataset.i18n = opening ? 'ui.backShowcase' : 'ui.viewAll';
       overviewButton.textContent = text(overviewButton.dataset.i18n);
+    }
+
+    // Mobile uses a normal list from the first render, without scroll steps.
+    setWorkView(mobileWork.matches || desktopOverview);
+    mobileWork.addEventListener('change', () => {
+      setWorkView(mobileWork.matches || desktopOverview);
+    });
+
+    overviewButton.addEventListener('click', () => {
+      if (mobileWork.matches) return;
+      const opening = overviewGrid.hidden;
+      if (opening) showcaseScrollPosition = window.scrollY;
+      desktopOverview = opening;
+      setWorkView(opening);
 
       const overviewTop = window.scrollY + workSection.getBoundingClientRect().top;
       const headerHeight = parseFloat(getComputedStyle(root).getPropertyValue('--header-height'));

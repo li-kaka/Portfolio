@@ -394,3 +394,26 @@
 @media (max-width: 620px) {
   .hero-title-line:last-child { margin-left: 26%; }
 }
+
+/* Mobile Work is a normal overview list, without showcase scroll space. */
+@media (max-width: 620px) {
+  .work-section .work-stage {
+    position: relative;
+    top: auto;
+    height: auto;
+    min-height: 0;
+    padding-block: 24px 80px;
+  }
+
+  .work-section .project-pagination,
+  .work-section .project-visuals,
+  .work-section .project-caption,
+  .work-section .work-steps,
+  .work-section .works-overview-toggle {
+    display: none;
+  }
+
+  .work-section .works-overview {
+    margin-top: 0;
+  }
+}
