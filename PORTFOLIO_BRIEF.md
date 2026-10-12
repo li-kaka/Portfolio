@@ -1,297 +1,156 @@
-# PORTFOLIO BRIEF
+# Portfolio Design and Maintenance Brief
 
-## Purpose and source of truth
+Updated: 2026-10-12
 
-This document is the working source of truth for Li Pui Ka's portfolio. Read it before changing the project.
+## Purpose
 
-Priority when references disagree:
+This document records the approved direction and maintenance rules for Li Pui Ka's portfolio. It describes the implemented site rather than an early proposal.
 
-1. The latest approved Design Comp screenshot.
-2. This brief.
-3. The Figma file as a secondary reference: <https://www.figma.com/design/31uf9bBy3y0xiwfNiBcsMZ/Untitled?node-id=58-7>
-4. Existing code only where it does not conflict with the approved design.
-
-This is an implementation task, not an invitation to redesign. Older concepts such as an equal card grid, a React/Vite rebuild, pill tags, a full-page navy composition, or a generic portfolio template are superseded by the latest Design Comp.
+Follow the user's latest approved decisions first, then the current Design Comp and this brief. Inspect the current source before editing. Do not redesign the site or introduce project facts without approval.
 
 ## Positioning
 
-- Name: Li Pui Ka / 李珮嘉
-- Location and background: Hong Kong-born, based in Tokyo
-- Primary positioning: Web Designer / Digital Designer
-- Supporting strength: practical frontend implementation knowledge
-- Current education: HAL Tokyo, Department of WEB — WEB Design Major
-- Expected graduation: March 2027
-- Target opportunities: web design, digital design, web production, and related junior roles in Japan
+- Name: Li Pui Ka / リプイカ
+- Background: from Hong Kong, based in Tokyo
+- Intended roles: Web Designer / Web Creator / Digital Designer
+- Education: HAL Tokyo, WEB Design Major; expected graduation March 2027
+- Focus: information that communicates a site's purpose, visual presentation that encourages further reading, and a clear browsing experience
+- Personal contribution: photography, image selection, content organisation, layout and web implementation
 
-The portfolio should communicate that Li Pui Ka has visual judgment, can organise information clearly, understands responsive web production, and can carry ideas from design into implementation. It should not present her as a React engineer or overstate seniority.
+Keep the wording natural and specific. Explain a design intention, the choice made and where it appears. Distinguish intended benefits from measured outcomes. Do not claim user testing or results without evidence.
 
-Core English line:
+## Stack and structure
 
-> From Hong Kong to Tokyo. Exploring ideas through web and design.
+The site uses plain HTML, CSS and vanilla JavaScript. Preserve this stack; no framework migration or animation library is needed.
 
-Approved Japanese equivalent:
+- `index.html`: Hero, Work, About, Contact and footer
+- `work01.html`–`work08.html`: eight case studies
+- `css/style.css`: shared styles and Home
+- `css/responsive.css`: shared responsive styles
+- `css/work.css`: case-study styles
+- `js/main.js`: shared interactions and Home project showcase
+- `js/work-detail.js`: other-project links on case-study pages
+- `js/translations.js`: Japanese, English and Traditional Chinese copy
+- `js/language.js`: language selection and translated content
+- `image/optimized`: published WebP assets and export manifest
+- `scripts`: image export utilities
 
-> 香港から東京へ。Webとデザインを通して、アイデアを探求する。
+## Visual direction and typography
 
-## Visual direction
+Use photography, generous whitespace and restrained typography to give the site a personal identity while keeping navigation and content clear.
 
-The approved direction is **editorial × digital × photographic**: restrained, contemporary, image-led, and personal.
+- Navigation and major section headings: Aboreto, weight 400
+- Hero heading: Abhaya Libre ExtraBold, weight 800
+- Hero catchphrase: small Japanese sans-serif text
+- Body: DM Sans with Japanese and Traditional Chinese fallbacks
+- Home project captions: Helvetica Neue / Helvetica / sans-serif
+- Case-study All works captions: the same Helvetica family, weight 500, smaller than the earlier bold version
+- All works image-to-caption gap: 16px
 
-Keep:
+Use the stylesheet as the source for current sizes, spacing and responsive values. Avoid synthetic bold for Aboreto.
 
-- Generous whitespace and a clear hierarchy
-- Strong photography and large project imagery
-- Refined typography with restrained UI elements
-- Editorial composition without sacrificing usability
-- A consistent system across Home and future case studies
-- Light mode as the default, with a considered dark mode
+## Home and navigation
 
-Avoid:
+The section order is Hero → Work → About → Contact.
 
-- Generic AI-generated portfolio styling
-- SaaS-style heroes, bento layouts, equal card grids, or oversized rounded cards
-- Glassmorphism, unnecessary gradients, decorative blobs, and excessive effects
-- Pill-shaped category tags or repeated "School Project" badges
-- Multicolour social icons in the resting state
-- Inventing new sections, copy, colours, or interactions without approval
-- Copying reference websites literally
+The header is transparent with white text over the Hero and returns to the standard theme colours below it. No section is marked active while the Hero is in view. The logo returns to the top. Mobile navigation is positioned at the bottom of the viewport.
 
-The latest screenshot is authoritative for composition, alignment, spacing, image placement, and section rhythm. Do not replace those decisions with a more conventional template.
-
-## Typography
-
-Use this approved type system:
-
-- Display and headings: `Aboreto`, weight 400; approximately 36px on desktop where appropriate
-- Body copy: `DM Sans`, weight 400; base size approximately 14px, adjusted when needed for comfortable reading
-- UI and small labels: `"Helvetica Neue", Helvetica, sans-serif`, weight 700; base size approximately 11px
-- Use sensible fallbacks and never allow Times to appear as an accidental visible default
-
-Use `Aboreto` selectively for major headings, project titles, and editorial accents. Navigation, metadata, body copy, years, categories, and controls should remain clear sans-serif text. Do not make all text decorative, oversized, thin, or low-contrast.
-
-## Home page structure
-
-Build and refine the Home page first. The approved order is:
-
-1. Fixed global header
-2. Hero
-3. Work
-4. About
-5. Contact
-6. Footer
-
-Do not build or redesign project-detail pages until the Home page is approved.
-
-### Header
-
-- One fixed global header, not a repeated header inside every section
-- Identity: `LI PUI KA`
-- Navigation: `WORK`, `ABOUT`, `CONTACT`
-- Language control and sun/moon theme control
-- Active section underline/state should update as the page scrolls
-- Keep the header visually light, legible, and keyboard accessible
+The favicon reads `KA` in white on a dark background.
 
 ### Hero
 
-- Use the large sunset image shown in the approved Design Comp
-- Image spans the width below the header
-- Place the text in the upper-right/right-side sky area as designed
-- Primary word: `PORTFOLIO`
-- Supporting copy: `From Hong Kong to Tokyo. Exploring ideas through web and design.`
-- Preserve the minimal composition; do not add CTA buttons
-- Ensure `PORTFOLIO` remains readable over the bright sky without a heavy overlay
+Use the supplied seaside sunset photograph. Place the staggered `WEB DESIGN` / `PORTFOLIO` heading together in the open sky, with the catchphrase:
+
+> 伝えたいことを、見たくなるかたちに。
+
+The photograph fades in first, followed by the title. On scroll, the Hero shrinks upwards and fades out as Work moves into view. Respect reduced-motion preferences. Preserve the approved photo colour, crop and text placement; do not add a heavy overlay or an extra CTA.
+
+Loading appears for opening or reloading Home and returning from a case study. Case-study pages have no loading screen. Same-page section navigation does not restart loading.
 
 ### Work
 
-This is the main interaction and visual focus.
+Showcase presents one large central project with smaller adjacent projects, so each project can receive attention. Eight numbered controls and scrolling change the active project. The main image opens its case study.
 
-- Use a sticky, scroll-driven project showcase
-- Present one main project at a time with a large device mockup/image
-- Show project indicators `01 02 03 04 05 06`; clearly emphasise the active number
-- Vertical scrolling updates the active image, number, title, and metadata
-- The showcase can remain sticky while scroll sections drive state changes
-- Use smooth, restrained transitions only
-- Clicking the main image should lead to the corresponding detail page when that page exists
-- Prefer CSS `position: sticky` plus small, understandable vanilla JavaScript
-- Do not install an animation library
-- Do not make scroll snapping feel forceful; usability takes priority
-- On mobile, simplify or remove the sticky behaviour if needed rather than reproducing a fragile desktop effect
+`View all works` switches to an overview; `Back to showcase` returns to the focused presentation. Preserve both browsing paths and the current display order:
 
-First real project:
+季の美 → MOMENTS IN INAGE → 春の手帖 → スノースケープ湯沢 → HAL Boulangerie → CAFÉ de PARIS → COCOON NAVIGATION → PORTFOLIO.
 
-- Title: `MOMENTS IN INAGE`
-- Metadata: `Web Design / School Project · 2026` (plain text, not pills)
-
-Other items may remain clearly labelled placeholders until real content is supplied. Do not invent final project facts.
+Asset numbers identify projects; they do not determine the Home display order.
 
 ### About
 
-Use the approved two-column desktop composition: a large circular portrait on the left and structured copy on the right. On smaller screens it becomes a logical single-column reading order.
+Keep the circular portrait and interests alongside the biography on desktop, with a single-column reading order on mobile.
 
-Left-side identity:
+The biography explains the transition from clinic work in Hong Kong to Japanese language school and then Web Design at HAL Tokyo. It connects the interest in visual presentation and understandable information to the enjoyment of selecting photographs, organising content and composing pages.
 
-> Li Pui Ka 李珮嘉  
-> Web Designer / Digital Designer  
-> Tokyo, Japan
+Place `Web Designer / Web Creator / Digital Designer` beneath the name. Retain Education, Focus, Tools and Languages. A separate Strengths section is not required. Do not add age, unrelated employment history or unsupported claims about business-level language skills.
 
-Right-side tagline:
+Use the approved language levels and scores in the shared copy: Cantonese as a native language, Mandarin communication ability, English ability with TOEIC 795, and Japanese ability with JLPT N2.
 
-> FROM HONG KONG TO TOKYO.  
-> EXPLORING IDEAS THROUGH WEB AND DESIGN.
+### Contact
 
-Approved English bio:
+Use the supplied email and confirmed Instagram, LinkedIn and GitHub links. Keep SVG social icons monochrome at rest, with the approved hover colours:
 
-> I'm Li Pui Ka, a Hong Kong-born web designer currently based in Tokyo.
->
-> My work focuses on web design, visual design and digital experiences, with an emphasis on clear structure, strong imagery and responsive layouts.
->
-> With a practical understanding of HTML, CSS and JavaScript, I design with both visual quality and implementation in mind. I'm currently looking for opportunities in web design, digital design and web production where I can continue developing both my visual and technical skills.
+- Instagram: `#D238AF`
+- LinkedIn: `#0470AE`
+- GitHub: `#8700BA`
 
-Information groups:
+The email is revealed from right to left once when Contact enters view. Keep the complete mailto link accessible, reveal it immediately on keyboard focus, and respect reduced-motion preferences.
 
-- **Education:** HAL Tokyo; Department of WEB — WEB Design Major; Expected Graduation: March 2027
-- **Focus:** Web Design; Digital Design; Responsive Design; Visual Design; Web Production
-- **Tools:** Figma; HTML; CSS; JavaScript; PHP; Photoshop; Illustrator; VS Code; Git; Codex
-- **Languages:** Cantonese; Mandarin; English; Japanese
+## Language and themes
 
-Do not add a separate `WHAT I STUDY` section because it duplicates Education, Focus, and Tools. Keep the bio concise and avoid generic design-philosophy claims or an extended personal essay.
+Japanese is the default on first visit. Remember the user's selected language and theme across pages.
 
-### Contact and footer
+Translate About details and case-study content. Keep the established navigation and section labels in English, project names in their approved form, and the Hero catchphrase in Japanese. Case-study field labels retain English with a smaller Japanese or Traditional Chinese translation; English has no duplicate translation.
 
-- Heading: `CONTACT`
-- Large typographic email: `li.kaka.tokyo@gmail.com`
-- Links: Instagram, LinkedIn, GitHub
-- Social icons are monochrome by default; brand colours may appear on hover/focus
-- Closing text: `Let's talk.`
-- Footer: `© 2026 LI PUI KA`
-- Do not add a contact form or large CTA button unless explicitly requested
+The globe control and its menu use restrained transparent glass styling. Use white menu text over the Hero and theme-appropriate text below it. Preserve visible keyboard focus.
 
-## Light and dark mode
+Light mode is the default. Dark mode uses a near-black background and warm-white text, including case-study descriptions. Do not invert photographs or mockups.
 
-- Default to light mode
-- Light: white or warm-white background with near-black text
-- Dark: near-black (for example `#0c0c0c` or `#111`) with off-white text
-- Keep composition and spacing identical between themes
-- Do not invert photos or mockups
-- Store the user's preference in `localStorage`
-- Theme control must be a real button with an accessible name and visible focus state
-- Check text and control contrast in both themes
+## Case-study content
 
-## Multilingual content
+Use the shared fields:
 
-Support:
+Range, Tools, Technologies, Overview, Purpose, Target, Information, Design, Period and Timing.
 
-- Japanese (default on first visit)
-- English
-- Traditional Chinese
+- Overview: what the project is and any school-assignment context
+- Purpose: what it aims to communicate or help users do
+- Target: who the content is intended for
+- Information: content order, grouping and paths through the site
+- Design: reasons for visual and interaction choices, connected to specific screens
+- Range: actual personal responsibilities, especially for group work
 
-The header globe opens the language choices. Remember the visitor's choice across Home and work pages. Shared copy lives in `js/translations.js`; language controls and text updates live in `js/language.js`. Current copy uses simple, direct wording for Web Designer / Digital Designer / Web Creator roles.
+Use users / 使用者 / ユーザー consistently. Avoid repeating the same explanation in Information and Design. Do not invent wireframes or process artefacts; existing finished designs can support explanations. Keep CAFÉ de PARIS identified as a desktop-only work.
 
-Use one shared layout and centralised content; do not maintain three duplicated websites. All meaningful navigation, hero, About, project metadata/descriptions, Contact labels, and future case-study labels must be translatable. Project names may remain in their original language where appropriate.
+Final design figures have Desktop / Mobile or feature-specific captions. PORTFOLIO additionally explains the Showcase / All works switch. All works at the bottom links to the other seven projects.
 
-Translations should sound natural in each language and preserve meaning rather than follow English word-for-word. Switching language must not break layout, overflow controls, or reset the theme unexpectedly.
+## Project and asset numbering
 
-## Responsive behaviour
+| ID | Project | Mockup | Design Comp prefix |
+|---|---|---|---|
+| 01 | COCOON NAVIGATION | mockup01 | work01_designcomp |
+| 02 | CAFÉ de PARIS | mockup02 | work02_designcomp |
+| 03 | HAL Boulangerie | mockup03 | work03_designcomp |
+| 04 | スノースケープ湯沢 | mockup04 | work04_designcomp |
+| 05 | HARU NO TECHOU / 春の手帖 | mockup05 | work05_designcomp |
+| 06 | MOMENTS IN INAGE | mockup06 | work06_designcomp |
+| 07 | 季の美 | mockup07 | work07_designcomp |
+| 08 | PORTFOLIO | mockup08 | work08_designcomp |
 
-Validate at least:
+Feature suffixes identify mobile, navigation, quiz, quiz result and overview images. PORTFOLIO uses `work08_designcomp_work` for its overview screenshot. Its production period is approximately 14 days, September–October 2026.
 
-- 1440px
-- 1024px
-- 768px
-- 390px
-- 375px
-- 320px
+MOMENTS uses the updated sea-view mockup rather than the earlier sunset-person opening image. Its current desktop export has four parts and mobile export has ten parts.
 
-Desktop should closely match the Design Comp. Tablet should reduce scale and spacing carefully. Mobile must be recomposed, not merely shrunk.
+Original PNG/JPEG files are retained locally and excluded through `.gitignore`. Published pages reference WebP in `image/optimized`. Replacing an original image does not update the published image automatically: re-export the relevant WebP, update the manifest and any changed part counts or dimensions, and update cache versions in HTML and JavaScript references. Check srcset as well as src.
 
-Mobile requirements:
+Verify image content visually before renaming; matching a filename alone does not establish the correct project. Use temporary filenames when swapping numbers to prevent overwrites. Do not publish local browser-test records or a nested repository folder.
 
-- Compact, usable navigation
-- Readable hero text over the image
-- A Work experience that remains understandable without awkward sticky behaviour
-- About in a logical single column
-- Scalable contact email with no clipping
-- Touch-friendly controls
-- No horizontal scrolling
-- No content hidden behind the fixed header
-- Preserve hierarchy, image importance, and whitespace
+## Maintenance and release checks
 
-Prefer fluid sizing with `clamp()` where it improves continuity, but keep breakpoints understandable and maintainable.
+Make the smallest necessary change and preserve unrelated content and styling. Check representative desktop, tablet and mobile layouts when changing layout. Check keyboard access, active navigation, language/theme persistence, overflow and reduced-motion behaviour when those features are affected.
 
-## Accessibility and quality baseline
+For asset changes, confirm the actual image, valid paths, responsive variants and cache refresh. Run JavaScript syntax checks after script edits. Clearly distinguish source checks from browser verification.
 
-- Semantic HTML and one logical `h1`
-- Correct heading hierarchy
-- Descriptive image `alt` text; empty `alt` for purely decorative images
-- Keyboard-accessible navigation and controls
-- Visible `:focus-visible` styles
-- Adequate colour contrast in both themes
-- Minimum practical touch targets
-- Respect `prefers-reduced-motion`
-- Do not depend on hover or motion to reveal essential information
-- Avoid layout shifts and unnecessarily large assets
+The eight cases and Home are implemented. The next release step is GitHub publication and GitHub Pages deployment, followed by checking the actual published URL, direct case-study links, images, language/theme controls, mobile layout and contact links.
 
-## Implementation constraints
-
-- Use plain HTML, CSS, and minimal vanilla JavaScript
-- Do not use React, Vite, a CSS framework, or an animation library
-- Do not create a new framework project
-- Follow the existing project structure and reuse suitable assets
-- Prefer simple CSS and small focused scripts over abstractions
-- Keep content, theme, language, and Work state understandable to a student who is still learning JavaScript
-- Use CSS custom properties for colours, typography, spacing, and sizing
-- Do not delete an older implementation without explicit approval; preserve it or work around it
-- Do not add advanced animation until the page structure, real content, themes, languages, and responsive behaviour are stable
-
-## Codex working rules
-
-Before editing:
-
-1. Read `AGENTS.md`, `README.md`, this file, and any relevant project documentation.
-2. Inspect the real file tree and existing implementation.
-3. Identify reusable assets and any user changes already present.
-4. State which files will be changed and why.
-5. Compare the current page with the latest Design Comp; do not rely on memory or a generic interpretation.
-
-While editing:
-
-- Make the smallest changes that satisfy the approved design
-- Preserve existing naming and code style where reasonable
-- Do not silently replace content, assets, or layout decisions
-- Do not redesign under labels such as "improve UI" or "modernise"
-- If the screenshot and code disagree, follow the screenshot unless doing so would cause an accessibility or functional problem; explain any necessary deviation
-- Keep placeholders explicit
-- Stop at the requested scope
-
-Before reporting completion:
-
-1. Run the site locally.
-2. Check desktop, tablet, and mobile widths listed above.
-3. Check for horizontal overflow and fixed-header overlap.
-4. Test keyboard navigation, visible focus, and reduced motion.
-5. Test section active state and the Work scroll interaction.
-6. Test light/dark mode, persistence, and contrast.
-7. Test EN/JP/Traditional Chinese switching and long-text layouts.
-8. Confirm no framework or unnecessary dependency was added.
-9. Compare screenshots against the latest Design Comp.
-10. Report changed files, remaining placeholders, known differences, and items requiring manual review.
-
-## Current phase and next review
-
-The immediate goal is to review and refine the Codex-built Home page, not to expand scope. Review it against:
-
-- Fidelity to the latest Design Comp
-- Typography and spacing
-- Fixed header and active navigation state
-- Sticky/scroll-driven Work behaviour
-- Light and dark mode
-- Multilingual layout
-- Responsive behaviour
-- Accessibility and keyboard use
-- Signs of generic AI-template styling
-
-After the Home page is approved, create the first reusable case-study page for `MOMENTS IN INAGE`, then use that approved structure for the remaining projects.
-
-Language scope: keep navigation, section headings, Home hero, Home work captions and Contact copy in English. Translate the About body/profile information and work detail descriptions and fields. Work titles keep their original names.
-
-Home Hero update: follow TOP PAGE new4.png with staggered WEB DESIGN / PORTFOLIO lines and Ideas, made visible. Keep the header transparent with white text over the full-height photo, then restore the standard header when Work reaches it. Retain the entrance animation. The Hero image and text scroll naturally with the page into Work; crop the mobile photo around the person.
+The existing review report records previous checks and their limits. Do not present it as complete testing on every browser, physical device or assistive technology.
