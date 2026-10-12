@@ -110,7 +110,9 @@
     }
   });
   picker.addEventListener('focusout', (event) => {
-    if (!picker.contains(event.relatedTarget)) closeOptions();
+    // Touch browsers may blur a button without focusing the tapped option.
+    // Keep it available for the following click; outside taps close it above.
+    if (event.relatedTarget && !picker.contains(event.relatedTarget)) closeOptions();
   });
 
   window.PortfolioLanguage = { text, translateTree };
