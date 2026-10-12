@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="香港出身、東京在住の李珮嘉のポートフォリオ。WebデザインとWeb制作の作品を紹介しています。">
+    <title>Li Pui Ka — Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231d1d1d'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='serif' font-size='25' fill='white'%3EKA%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&amp;family=Abhaya+Libre:wght@800&amp;family=DM+Sans:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script>
+      try { document.documentElement.dataset.theme = localStorage.getItem('portfolio-theme') || 'light'; } catch { document.documentElement.dataset.theme = 'light'; }
+    </script>
+    <script src="js/loading-init.js"></script>
+    <script src="js/loading.js" defer></script>
+    <script src="js/translations.js" defer></script><script src="js/language.js" defer></script><script src="js/main.js?v=20261012-inage-sea" defer></script>
+  </head>
+  <body class="home-page">
+    <div class="site-loader" data-loader aria-hidden="true">
+      <div class="site-loader-content">
+        <span class="site-loader-name">LI PUI KA</span>
+        <span class="site-loader-caption">WEB DESIGN PORTFOLIO</span>
+        <span class="site-loader-line"></span>
+      </div>
+    </div>
+    <a class="skip-link" href="#main" data-i18n="ui.skip" data-i18n-lang="en" lang="en">Skip to main content</a>
+
+    <header class="site-header is-over-hero" data-header>
+      <a class="site-logo" href="#main" aria-label="Li Pui Ka：トップへ戻る" data-i18n-aria-label="ui.home">LI PUI KA</a>
+      <nav class="site-nav" aria-label="メインナビゲーション" data-i18n-aria-label="ui.nav">
+        <a class="nav-link" href="#work" data-section-link="work" data-i18n="ui.work" data-i18n-lang="en" lang="en">Work</a>
+        <a class="nav-link" href="#about" data-section-link="about" data-i18n="ui.about" data-i18n-lang="en" lang="en">About</a>
+        <a class="nav-link" href="#contact" data-section-link="contact" data-i18n="ui.contact" data-i18n-lang="en" lang="en">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <div class="language-picker"><button class="language-indicator" type="button" aria-label="表示言語を選ぶ" aria-expanded="false" aria-controls="language-options" data-language-toggle>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.2 2.3 3.4 5.2 3.4 8.5S14.2 18.2 12 20.5C9.8 18.2 8.6 15.3 8.6 12S9.8 5.8 12 3.5Z"/></svg></button><div class="language-options" id="language-options" role="group" aria-label="表示言語を選ぶ" hidden><button type="button" data-language-option="ja" lang="ja" aria-pressed="true">日本語</button><button type="button" data-language-option="en" lang="en" aria-pressed="false">English</button><button type="button" data-language-option="zh-Hant" lang="zh-Hant" aria-pressed="false">繁體中文</button></div></div>
+        <button class="theme-toggle" type="button" aria-label="ダークモードに切り替える" aria-pressed="false" data-theme-toggle>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 15.2A8.4 8.4 0 0 1 8.8 3.9a8.5 8.5 0 1 0 11.3 11.3Z"/></svg>
+          <span class="theme-toggle-thumb" aria-hidden="true">&nbsp;</span>
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <img class="hero-image" src="image/optimized/HERO-1920.webp" alt="夕暮れの海辺に座る人物" data-i18n-alt="home.heroAlt" srcset="image/optimized/HERO-1280.webp 1280w, image/optimized/HERO-1920.webp 1920w, image/optimized/HERO-2560.webp 2560w" sizes="(max-width: 620px) 1100px, 100vw" width="1920" height="1080" decoding="async" fetchpriority="high">
+        <div class="hero-copy" lang="en">
+          <h1 id="hero-title"><span class="hero-title-line">WEB DESIGN</span> <span class="hero-title-line">PORTFOLIO</span></h1>
+          <p lang="ja"><span class="hero-copy-line">伝えたいことを、見たくなるかたちに。</span></p>
+        </div>
+      </section>
+
+      <section class="work-section page-section" id="work" aria-labelledby="work-title">
+        <h2 class="section-title" id="work-title" data-i18n="ui.work" data-i18n-lang="en" lang="en">Work</h2>
+        <div class="work-scroll">
+          <div class="work-stage">
+            <div class="project-pagination" aria-label="作品を選ぶ" data-i18n-aria-label="ui.chooseProject">
+              <button class="project-number is-active" type="button" data-project-button="0" aria-pressed="true">01</button>
+              <button class="project-number" type="button" data-project-button="1" aria-pressed="false">02</button>
+              <button class="project-number" type="button" data-project-button="2" aria-pressed="false">03</button>
+              <button class="project-number" type="button" data-project-button="3" aria-pressed="false">04</button>
+              <button class="project-number" type="button" data-project-button="4" aria-pressed="false">05</button>
+              <button class="project-number" type="button" data-project-button="5" aria-pressed="false">06</button>
+              <button class="project-number" type="button" data-project-button="6" aria-pressed="false">07</button>
+              <button class="project-number" type="button" data-project-button="7" aria-pressed="false">08</button>
+            </div>
+            <button class="works-overview-toggle" type="button" aria-expanded="false" aria-controls="works-overview" data-works-overview-toggle hidden data-i18n="ui.viewAll" data-i18n-lang="en" lang="en">View all works</button>
+            <div class="works-overview" id="works-overview" data-works-overview hidden></div>
+            <div class="project-visuals" data-project-visuals>
+              <a class="project-card project-card--previous" data-project-card data-project-index="7" aria-hidden="true">
+                <img src="image/optimized/mockup08-960.webp?v=20261012-ordered" alt="" srcset="image/optimized/mockup08-600.webp?v=20261012-ordered 600w, image/optimized/mockup08-960.webp?v=20261012-ordered 960w, image/optimized/mockup08-1600.webp?v=20261012-ordered 1600w" sizes="(max-width: 820px) 38vw, 400px" width="960" height="607" decoding="async" data-project-image>
+              </a>
+              <a class="project-card project-card--main" href="work07.html" aria-label="「季の美」の詳細を見る" data-project-card data-project-index="0">
+                <img src="image/optimized/mockup07-1600.webp?v=20261012-ordered" alt="季の美のWebサイトのモックアップ" srcset="image/optimized/mockup07-600.webp?v=20261012-ordered 600w, image/optimized/mockup07-960.webp?v=20261012-ordered 960w, image/optimized/mockup07-1600.webp?v=20261012-ordered 1600w" sizes="(max-width: 620px) calc(100vw - 24px), (max-width: 820px) 72vw, (max-width: 1245px) 61vw, 760px" width="1600" height="1012" decoding="async" data-project-image>
+              </a>
+              <a class="project-card project-card--next" data-project-card data-project-index="1" aria-hidden="true">
+                <img src="image/optimized/mockup06-960.webp?v=20261012-inage-sea" alt="" srcset="image/optimized/mockup06-600.webp?v=20261012-inage-sea 600w, image/optimized/mockup06-960.webp?v=20261012-inage-sea 960w, image/optimized/mockup06-1600.webp?v=20261012-inage-sea 1600w" sizes="(max-width: 820px) 38vw, 400px" width="960" height="607" decoding="async" data-project-image>
+              </a>
+              <button class="project-side-control project-side-control--previous" type="button" data-project-control="previous" aria-label="前の作品：PORTFOLIO"><span class="visually-hidden" data-i18n="ui.previousShort" data-i18n-lang="en" lang="en">Previous project</span></button>
+              <button class="project-side-control project-side-control--next" type="button" data-project-control="next" aria-label="次の作品：MOMENTS IN INAGE"><span class="visually-hidden" data-i18n="ui.nextShort" data-i18n-lang="en" lang="en">Next project</span></button>
+            </div>
+            <div class="project-caption" aria-live="polite">
+              <h3 data-project-title>季の美</h3>
+              <p data-project-meta>Content Website · 2026/09</p>
+            </div>
+          </div>
+
+          <div class="work-steps" aria-hidden="true">
+            <div class="work-step" data-project-step="0"></div>
+            <div class="work-step" data-project-step="1"></div>
+            <div class="work-step" data-project-step="2"></div>
+            <div class="work-step" data-project-step="3"></div>
+            <div class="work-step" data-project-step="4"></div>
+            <div class="work-step" data-project-step="5"></div>
+            <div class="work-step" data-project-step="6"></div>
+            <div class="work-step" data-project-step="7"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section page-section" id="about" aria-labelledby="about-title">
+        <h2 class="section-title" id="about-title" data-i18n="ui.about" data-i18n-lang="en" lang="en">About</h2>
+        <div class="about-layout">
+          <p class="about-tagline" data-i18n="home.tagline" data-i18n-lang="en" lang="en">“From Hong Kong to Tokyo. Exploring ideas through web and design.”</p>
+          <figure class="profile">
+            <img src="image/optimized/About-768.webp" alt="雪山で撮影した李珮嘉の写真" data-i18n-alt="home.portraitAlt" srcset="image/optimized/About-384.webp 384w, image/optimized/About-768.webp 768w" sizes="(max-width: 620px) 78vw, (max-width: 820px) 340px, (max-width: 1245px) 290px, 400px" width="768" height="1024" decoding="async" loading="lazy">
+            <figcaption class="profile-interests">
+              <p class="profile-origin"><span aria-hidden="true"># </span><span data-i18n="home.origin">香港出身</span></p>
+              <p class="profile-interests-title" data-i18n="home.interests">好きなこと</p>
+              <ul class="profile-tags">
+                <li><span aria-hidden="true"># </span><span data-i18n="home.snowboarding">スノーボード</span></li>
+                <li><span aria-hidden="true"># </span><span data-i18n="home.cats">猫</span></li>
+                <li><span aria-hidden="true"># </span><span data-i18n="home.cooking">料理</span></li>
+                <li><span aria-hidden="true"># </span><span data-i18n="home.photography">写真</span></li>
+                <li><span aria-hidden="true"># </span><span data-i18n="home.travel">旅行</span></li>
+                <li><span aria-hidden="true"># </span><span data-i18n="home.music">音楽</span></li>
+              </ul>
+            </figcaption>
+          </figure>
+
+          <div class="about-content">
+            <h3 class="profile-name" lang="en">Li Pui Ka <span lang="ja">リプイカ</span></h3>
+            <p class="profile-role" lang="en">Web Designer / Web Creator / Digital Designer</p>
+            <div class="bio"><p data-i18n="home.bio1">香港のクリニックで長年働いた後、もう一度学び、新しい分野で仕事をしたいと考えました。当時は香港で日本語を学んでおり、日本の生活環境が好きだったこともあり、日本語学校への留学を決めました。</p><p data-i18n="home.bio2">来日後、これからの仕事について調べる中で、Webデザインに興味を持ちました。画面のデザインや、見る人にわかりやすく伝える方法を学びたいと思い、HAL東京に入学しました。</p><p data-i18n="home.bio3">実際に制作してみると、写真を選び、情報を整理して、一つのページにまとめていく時間が楽しく、Webデザインを仕事にしたいと感じました。見た目に惹かれて、もっと見たくなる。そんな魅力があり、使いやすさも大切にしたWebサイトをつくりたいです。</p></div>
+
+            <div class="profile-details">
+              <section><h3 data-i18n="ui.education" data-i18n-lang="en" lang="en">Education</h3><p data-i18n="home.education">HAL東京<br>WEB学科・WEBデザイン専攻<br>2027年3月 卒業予定</p></section>
+              <section><h3 data-i18n="ui.focus" data-i18n-lang="en" lang="en">Focus</h3><p data-i18n="home.focus">内容と情報の順序を整理し、サイトのテーマや目的が伝わる構成<br>写真・文字・レイアウトで、続きを見たくなる画面づくり<br>読みやすく、操作に迷わず、必要な情報を見つけられる設計</p></section>
+              <section><h3 data-i18n="ui.tools" data-i18n-lang="en" lang="en">Tools</h3><p data-i18n="home.tools">Figma / HTML / CSS / JavaScript / PHP /<br>Photoshop / Illustrator /<br>VS Code / Git / Codex</p></section>
+              <section><h3 data-i18n="ui.languages" data-i18n-lang="en" lang="en">Languages</h3><p data-i18n="home.languages">広東語：母語<br>中国語（普通話）：会話可能<br>英語：TOEIC 795点<br>日本語：JLPT N2取得</p></section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section page-section" id="contact" aria-labelledby="contact-title">
+        <h2 class="section-title" id="contact-title" data-i18n="ui.contact" data-i18n-lang="en" lang="en">Contact</h2>
+        <a class="email-link" href="mailto:li.kaka.tokyo@gmail.com"><span class="email-text">li.kaka.tokyo@gmail.com</span></a>
+        <div class="social-links" aria-label="SNS・プロフィール" data-i18n-aria-label="ui.social">
+          <a href="https://www.instagram.com/kaka.webdesign/" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <img class="social-icon" src="image/Platform=Instagram, Color=Negative.svg" width="48" height="48" alt="" decoding="async">
+            <img class="social-hover-icon" src="image/instagram-hover.svg" width="48" height="48" alt="" decoding="async">
+          </a>
+          <a href="https://www.linkedin.com/in/pui-ka-li-7a196a3a8/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <img class="social-icon" src="image/Platform=LinkedIn, Color=Negative.svg" width="48" height="48" alt="" decoding="async">
+            <img class="social-hover-icon" src="image/linkedin-hover.svg" width="48" height="48" alt="" decoding="async">
+          </a>
+          <a href="https://github.com/li-kaka" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <img class="social-icon" src="image/Platform=Github, Color=Negative.svg" width="48" height="48" alt="" decoding="async">
+            <img class="social-hover-icon" src="image/github-hover.svg" width="48" height="48" alt="" decoding="async">
+          </a>
+        </div>
+        <p class="lets-talk" data-i18n="home.closing" data-i18n-lang="en" lang="en">Let’s talk.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 LI PUI KA</p>
+    </footer>
+  </body>
+</html>

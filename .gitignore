@@ -1,0 +1,48 @@
+# Local source images are retained; published pages use image/optimized/*.webp.
+# Keep the supplied SVG icons and optimized images in Git.
+.DS_Store
+/image/About.jpeg
+/image/HERO.jpeg
+/image/KitKat.png
+/image/mockup06.png
+/image/mockup06_cover.png
+/image/mockup07.png
+/image/mockup07_cover.png
+/image/mockup05.png
+/image/mockup05_cover.png
+/image/mockup04.png
+/image/mockup04_cover.png
+/image/mockup03.png
+/image/mockup03_cover.png
+/image/mockup02.png
+/image/mockup02_cover.png
+/image/mockup01.png
+/image/mockup01_cover.png
+/image/portfolio_designcomp.png
+/image/portfolio_designcomp_works.png
+/image/work06_designcomp.png
+/image/work06_designcomp_mobile.png
+/image/work01_designcomp.png
+/image/work01_designcomp_navigation.png
+/image/work02_designcomp.png
+/image/work03_designcomp.png
+/image/work03_designcomp_mobile.png
+/image/work04_designcomp.png
+/image/work04_designcomp_mobile.png
+/image/work04_designcomp_quiz.png
+/image/work04_designcomp_quiz_result.png
+/image/work05_designcomp.png
+/image/work05_designcomp_mobile.png
+/image/work07_designcomp.png
+/image/work07_designcomp_mobile.png
+/image/mockup08.png
+/image/work08_designcomp.png
+/image/work08_designcomp_work.png
+/image/work08_designcomp_mobile.png
+
+# Local tooling and accidental nested repository; not website assets.
+/.playwright-cli/
+/Portfolio/
+
+# Private review notes are retained locally, not published.
+/docs/portfolio-review-2026-10-12.md

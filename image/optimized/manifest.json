@@ -1,0 +1,682 @@
+{
+  "HERO.jpeg": {
+    "original_bytes": 2359535,
+    "variants": [
+      {
+        "src": "image/optimized/HERO-1280.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 98622
+      },
+      {
+        "src": "image/optimized/HERO-1920.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 192848
+      },
+      {
+        "src": "image/optimized/HERO-2560.webp",
+        "width": 2560,
+        "height": 1440,
+        "bytes": 332006
+      }
+    ]
+  },
+  "About.jpeg": {
+    "original_bytes": 188899,
+    "variants": [
+      {
+        "src": "image/optimized/About-384.webp",
+        "width": 384,
+        "height": 512,
+        "bytes": 28462
+      },
+      {
+        "src": "image/optimized/About-768.webp",
+        "width": 768,
+        "height": 1024,
+        "bytes": 94838
+      }
+    ]
+  },
+  "mockup06.png": {
+    "original_bytes": 3702539,
+    "variants": [
+      {
+        "src": "image/optimized/mockup06-600.webp",
+        "width": 600,
+        "height": 379,
+        "bytes": 37442
+      },
+      {
+        "src": "image/optimized/mockup06-960.webp",
+        "width": 960,
+        "height": 607,
+        "bytes": 80850
+      },
+      {
+        "src": "image/optimized/mockup06-1600.webp",
+        "width": 1600,
+        "height": 1012,
+        "bytes": 157426
+      }
+    ]
+  },
+  "mockup07.png": {
+    "original_bytes": 7549235,
+    "variants": [
+      {
+        "src": "image/optimized/mockup07-600.webp",
+        "width": 600,
+        "height": 379,
+        "bytes": 62220
+      },
+      {
+        "src": "image/optimized/mockup07-960.webp",
+        "width": 960,
+        "height": 607,
+        "bytes": 141886
+      },
+      {
+        "src": "image/optimized/mockup07-1600.webp",
+        "width": 1600,
+        "height": 1012,
+        "bytes": 345650
+      }
+    ]
+  },
+  "mockup05.png": {
+    "original_bytes": 4879516,
+    "variants": [
+      {
+        "src": "image/optimized/mockup05-600.webp",
+        "width": 600,
+        "height": 379,
+        "bytes": 45082
+      },
+      {
+        "src": "image/optimized/mockup05-960.webp",
+        "width": 960,
+        "height": 607,
+        "bytes": 100712
+      },
+      {
+        "src": "image/optimized/mockup05-1600.webp",
+        "width": 1600,
+        "height": 1012,
+        "bytes": 224634
+      }
+    ]
+  },
+  "mockup04.png": {
+    "original_bytes": 5581802,
+    "variants": [
+      {
+        "src": "image/optimized/mockup04-600.webp",
+        "width": 600,
+        "height": 379,
+        "bytes": 42292
+      },
+      {
+        "src": "image/optimized/mockup04-960.webp",
+        "width": 960,
+        "height": 607,
+        "bytes": 97344
+      },
+      {
+        "src": "image/optimized/mockup04-1600.webp",
+        "width": 1600,
+        "height": 1012,
+        "bytes": 238314
+      }
+    ]
+  },
+  "mockup03.png": {
+    "original_bytes": 2480624,
+    "variants": [
+      {
+        "src": "image/optimized/mockup03-600.webp",
+        "width": 600,
+        "height": 345,
+        "bytes": 19300
+      },
+      {
+        "src": "image/optimized/mockup03-960.webp",
+        "width": 960,
+        "height": 551,
+        "bytes": 37240
+      },
+      {
+        "src": "image/optimized/mockup03-1600.webp",
+        "width": 1600,
+        "height": 919,
+        "bytes": 77660
+      }
+    ]
+  },
+  "mockup02.png": {
+    "original_bytes": 2979885,
+    "variants": [
+      {
+        "src": "image/optimized/mockup02-600.webp",
+        "width": 600,
+        "height": 345,
+        "bytes": 25018
+      },
+      {
+        "src": "image/optimized/mockup02-960.webp",
+        "width": 960,
+        "height": 551,
+        "bytes": 46084
+      },
+      {
+        "src": "image/optimized/mockup02-1600.webp",
+        "width": 1600,
+        "height": 919,
+        "bytes": 86554
+      }
+    ]
+  },
+  "mockup01.png": {
+    "original_bytes": 5215959,
+    "variants": [
+      {
+        "src": "image/optimized/mockup01-600.webp",
+        "width": 600,
+        "height": 345,
+        "bytes": 52556
+      },
+      {
+        "src": "image/optimized/mockup01-960.webp",
+        "width": 960,
+        "height": 551,
+        "bytes": 105554
+      },
+      {
+        "src": "image/optimized/mockup01-1600.webp",
+        "width": 1600,
+        "height": 919,
+        "bytes": 218414
+      }
+    ]
+  },
+  "work06_designcomp.png": {
+    "original_bytes": 31767614,
+    "parts": [
+      {
+        "src": "image/optimized/work06_designcomp-part01.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 215754
+      },
+      {
+        "src": "image/optimized/work06_designcomp-part02.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 285096
+      },
+      {
+        "src": "image/optimized/work06_designcomp-part03.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 168430
+      },
+      {
+        "src": "image/optimized/work06_designcomp-part04.webp",
+        "width": 1200,
+        "height": 1051,
+        "bytes": 68546
+      }
+    ]
+  },
+  "work06_designcomp_mobile.png": {
+    "original_bytes": 11975670,
+    "parts": [
+      {
+        "src": "image/optimized/work06_designcomp_mobile-part01.webp",
+        "width": 780,
+        "height": 2400,
+        "bytes": 136998
+      },
+      {
+        "src": "image/optimized/work06_designcomp_mobile-part02.webp",
+        "width": 780,
+        "height": 2400,
+        "bytes": 107684
+      },
+      {
+        "src": "image/optimized/work06_designcomp_mobile-part03.webp",
+        "width": 780,
+        "height": 2400,
+        "bytes": 140954
+      },
+      {
+        "src": "image/optimized/work06_designcomp_mobile-part04.webp",
+        "width": 780,
+        "height": 2400,
+        "bytes": 297658
+      },
+      {
+        "src": "image/optimized/work06_designcomp_mobile-part05.webp",
+        "width": 780,
+        "height": 2400,
+        "bytes": 167544
+      },
+      {
+        "src": "image/optimized/work06_designcomp_mobile-part06.webp",
+        "width": 780,
+        "height": 2400,
+        "bytes": 111764
+      },
+      {
+        "src": "image/optimized/work06_designcomp_mobile-part07.webp",
+        "width": 780,
+        "height": 2400,
+        "bytes": 130072
+      },
+      {
+        "src": "image/optimized/work06_designcomp_mobile-part08.webp",
+        "width": 780,
+        "height": 2400,
+        "bytes": 101856
+      },
+      {
+        "src": "image/optimized/work06_designcomp_mobile-part09.webp",
+        "width": 780,
+        "height": 2400,
+        "bytes": 158282
+      },
+      {
+        "src": "image/optimized/work06_designcomp_mobile-part10.webp",
+        "width": 780,
+        "height": 236,
+        "bytes": 3094
+      }
+    ]
+  },
+  "work01_designcomp.png": {
+    "original_bytes": 18910668,
+    "parts": [
+      {
+        "src": "image/optimized/work01_designcomp-part01.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 551348
+      },
+      {
+        "src": "image/optimized/work01_designcomp-part02.webp",
+        "width": 1200,
+        "height": 2178,
+        "bytes": 96384
+      }
+    ]
+  },
+  "work01_designcomp_navigation.png": {
+    "original_bytes": 673434,
+    "parts": [
+      {
+        "src": "image/optimized/work01_designcomp_navigation-part01.webp",
+        "width": 1200,
+        "height": 853,
+        "bytes": 96594
+      }
+    ]
+  },
+  "work02_designcomp.png": {
+    "original_bytes": 25292859,
+    "parts": [
+      {
+        "src": "image/optimized/work02_designcomp-part01.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 272638
+      },
+      {
+        "src": "image/optimized/work02_designcomp-part02.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 352758
+      },
+      {
+        "src": "image/optimized/work02_designcomp-part03.webp",
+        "width": 1200,
+        "height": 308,
+        "bytes": 15324
+      }
+    ]
+  },
+  "work03_designcomp.png": {
+    "original_bytes": 14752323,
+    "parts": [
+      {
+        "src": "image/optimized/work03_designcomp-part01.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 205542
+      },
+      {
+        "src": "image/optimized/work03_designcomp-part02.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 189100
+      },
+      {
+        "src": "image/optimized/work03_designcomp-part03.webp",
+        "width": 1200,
+        "height": 291,
+        "bytes": 6882
+      }
+    ]
+  },
+  "work03_designcomp_mobile.png": {
+    "original_bytes": 8654068,
+    "parts": [
+      {
+        "src": "image/optimized/work03_designcomp_mobile-part01.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 156606
+      },
+      {
+        "src": "image/optimized/work03_designcomp_mobile-part02.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 182082
+      },
+      {
+        "src": "image/optimized/work03_designcomp_mobile-part03.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 243828
+      },
+      {
+        "src": "image/optimized/work03_designcomp_mobile-part04.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 275194
+      },
+      {
+        "src": "image/optimized/work03_designcomp_mobile-part05.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 131098
+      },
+      {
+        "src": "image/optimized/work03_designcomp_mobile-part06.webp",
+        "width": 772,
+        "height": 892,
+        "bytes": 20160
+      }
+    ]
+  },
+  "work04_designcomp.png": {
+    "original_bytes": 70273608,
+    "parts": [
+      {
+        "src": "image/optimized/work04_designcomp-part01.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 619864
+      },
+      {
+        "src": "image/optimized/work04_designcomp-part02.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 568156
+      },
+      {
+        "src": "image/optimized/work04_designcomp-part03.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 494738
+      },
+      {
+        "src": "image/optimized/work04_designcomp-part04.webp",
+        "width": 1200,
+        "height": 1115,
+        "bytes": 87562
+      }
+    ]
+  },
+  "work04_designcomp_mobile.png": {
+    "original_bytes": 15810553,
+    "parts": [
+      {
+        "src": "image/optimized/work04_designcomp_mobile-part01.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 258548
+      },
+      {
+        "src": "image/optimized/work04_designcomp_mobile-part02.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 322206
+      },
+      {
+        "src": "image/optimized/work04_designcomp_mobile-part03.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 165510
+      },
+      {
+        "src": "image/optimized/work04_designcomp_mobile-part04.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 183502
+      },
+      {
+        "src": "image/optimized/work04_designcomp_mobile-part05.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 272624
+      },
+      {
+        "src": "image/optimized/work04_designcomp_mobile-part06.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 233084
+      },
+      {
+        "src": "image/optimized/work04_designcomp_mobile-part07.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 104786
+      },
+      {
+        "src": "image/optimized/work04_designcomp_mobile-part08.webp",
+        "width": 772,
+        "height": 1600,
+        "bytes": 76394
+      }
+    ]
+  },
+  "work04_designcomp_quiz.png": {
+    "original_bytes": 7552981,
+    "parts": [
+      {
+        "src": "image/optimized/work04_designcomp_quiz-part01.webp",
+        "width": 1200,
+        "height": 1385,
+        "bytes": 122528
+      }
+    ]
+  },
+  "work04_designcomp_quiz_result.png": {
+    "original_bytes": 5378639,
+    "parts": [
+      {
+        "src": "image/optimized/work04_designcomp_quiz_result-part01.webp",
+        "width": 1200,
+        "height": 753,
+        "bytes": 105720
+      }
+    ]
+  },
+  "work05_designcomp.png": {
+    "original_bytes": 11977122,
+    "parts": [
+      {
+        "src": "image/optimized/work05_designcomp-part01.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 395022
+      },
+      {
+        "src": "image/optimized/work05_designcomp-part02.webp",
+        "width": 1200,
+        "height": 295,
+        "bytes": 9572
+      }
+    ]
+  },
+  "work05_designcomp_mobile.png": {
+    "original_bytes": 3753097,
+    "parts": [
+      {
+        "src": "image/optimized/work05_designcomp_mobile-part01.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 323482
+      },
+      {
+        "src": "image/optimized/work05_designcomp_mobile-part02.webp",
+        "width": 772,
+        "height": 2400,
+        "bytes": 182214
+      },
+      {
+        "src": "image/optimized/work05_designcomp_mobile-part03.webp",
+        "width": 772,
+        "height": 1821,
+        "bytes": 111514
+      }
+    ]
+  },
+  "work07_designcomp.png": {
+    "original_bytes": 18065607,
+    "parts": [
+      {
+        "src": "image/optimized/work07_designcomp-part01.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 693770
+      },
+      {
+        "src": "image/optimized/work07_designcomp-part02.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 775778
+      },
+      {
+        "src": "image/optimized/work07_designcomp-part03.webp",
+        "width": 1200,
+        "height": 1734,
+        "bytes": 211320
+      }
+    ]
+  },
+  "work07_designcomp_mobile.png": {
+    "original_bytes": 9596324,
+    "parts": [
+      {
+        "src": "image/optimized/work07_designcomp_mobile-part01.webp",
+        "width": 600,
+        "height": 2400,
+        "bytes": 345018
+      },
+      {
+        "src": "image/optimized/work07_designcomp_mobile-part02.webp",
+        "width": 600,
+        "height": 2400,
+        "bytes": 399764
+      },
+      {
+        "src": "image/optimized/work07_designcomp_mobile-part03.webp",
+        "width": 600,
+        "height": 2400,
+        "bytes": 284736
+      },
+      {
+        "src": "image/optimized/work07_designcomp_mobile-part04.webp",
+        "width": 600,
+        "height": 2400,
+        "bytes": 475758
+      },
+      {
+        "src": "image/optimized/work07_designcomp_mobile-part05.webp",
+        "width": 600,
+        "height": 1510,
+        "bytes": 86522
+      }
+    ]
+  },
+  "mockup08.png": {
+    "original_bytes": 3557439,
+    "variants": [
+      {
+        "src": "image/optimized/mockup08-600.webp",
+        "width": 600,
+        "height": 379,
+        "bytes": 34384
+      },
+      {
+        "src": "image/optimized/mockup08-960.webp",
+        "width": 960,
+        "height": 607,
+        "bytes": 73536
+      },
+      {
+        "src": "image/optimized/mockup08-1600.webp",
+        "width": 1600,
+        "height": 1012,
+        "bytes": 156524
+      }
+    ]
+  },
+  "work08_designcomp.png": {
+    "original_bytes": 2376839,
+    "parts": [
+      {
+        "src": "image/optimized/work08_designcomp-part01.webp",
+        "width": 1200,
+        "height": 2400,
+        "bytes": 293346
+      },
+      {
+        "src": "image/optimized/work08_designcomp-part02.webp",
+        "width": 1200,
+        "height": 478,
+        "bytes": 13918
+      }
+    ]
+  },
+  "work08_designcomp_work.png": {
+    "original_bytes": 773364,
+    "parts": [
+      {
+        "src": "image/optimized/work08_designcomp_work-part01.webp",
+        "width": 1200,
+        "height": 999,
+        "bytes": 103484
+      }
+    ]
+  },
+  "work08_designcomp_mobile.png": {
+    "original_bytes": 375607,
+    "parts": [
+      {
+        "src": "image/optimized/work08_designcomp_mobile-part01.webp",
+        "width": 272,
+        "height": 2400,
+        "bytes": 83532
+      },
+      {
+        "src": "image/optimized/work08_designcomp_mobile-part02.webp",
+        "width": 272,
+        "height": 400,
+        "bytes": 4320
+      }
+    ]
+  }
+}
