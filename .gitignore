@@ -46,3 +46,7 @@
 
 # Private review notes are retained locally, not published.
 /docs/portfolio-review-2026-10-12.md
+
+# Retain original interest photos locally; publish their WebP derivatives.
+/image/About_*.JPG
+/image/About_*.jpg

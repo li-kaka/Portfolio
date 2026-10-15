@@ -11,14 +11,6 @@
   color-scheme: light;
 }
 
-:root[data-theme="dark"] {
-  --bg: #141414;
-  --text: #f4f1eb;
-  --muted: #bcb8b1;
-  --line: #77736d;
-  color-scheme: dark;
-}
-
 *,
 *::before,
 *::after {
@@ -236,62 +228,6 @@ img {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 1.8;
-}
-
-.theme-toggle {
-  position: relative;
-  display: flex;
-  width: 56px;
-  height: 30px;
-  border: 1px solid color-mix(in srgb, currentColor 55%, transparent);
-  border-radius: 999px;
-  padding: 4px 7px;
-  align-items: center;
-  justify-content: space-between;
-  background: transparent;
-  cursor: pointer;
-}
-
-.theme-toggle svg {
-  position: relative;
-  z-index: 1;
-  width: 14px;
-  height: 14px;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.8;
-  transition: color 220ms ease;
-}
-
-.theme-toggle-thumb {
-  position: absolute;
-  z-index: 0;
-  top: 4px;
-  left: 4px;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: var(--text);
-  translate: 26px 0;
-  transition: translate 220ms cubic-bezier(.22, .75, .22, 1);
-}
-
-.theme-toggle .sun-icon {
-  color: var(--bg);
-}
-
-:root[data-theme="dark"] .theme-toggle-thumb {
-  translate: 0 0;
-}
-
-:root[data-theme="dark"] .theme-toggle .moon-icon {
-  color: var(--bg);
-}
-
-:root[data-theme="dark"] .theme-toggle .sun-icon {
-  color: var(--text);
 }
 
 main {
@@ -934,7 +870,6 @@ main {
   object-fit: contain;
   filter: brightness(0);
 }
-:root[data-theme="dark"] .social-icon { filter: none; }
 .social-icon { transition: opacity 150ms ease; }
 .social-hover-icon {
   position: absolute;
@@ -1065,9 +1000,6 @@ main {
   opacity: 0;
 }
 .language-options button[aria-pressed="true"]::before { opacity: .8; }
-:root[data-theme="dark"] .language-options {
-  background: linear-gradient(135deg, #ffffff0a, #ffffff02), color-mix(in srgb, var(--bg) 22%, transparent);
-}
 .site-header.is-over-hero .language-picker [data-language-toggle] {
   background: #ffffff16;
   border-color: #ffffff50;
@@ -1133,7 +1065,6 @@ html:not([lang="en"]) .detail-heading p { font-family: inherit; }
   backdrop-filter: none;
   color: #fff;
 }
-.site-header.is-over-hero .theme-toggle { --text: #fff; --bg: #253746; }
 .site-header.is-over-hero .language-options { color: #fff; }
 @media (max-width: 620px) {
   .site-header.is-over-hero .site-nav { color: var(--text); }

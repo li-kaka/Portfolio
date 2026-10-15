@@ -47,6 +47,8 @@
 
   function applyLanguage() {
     document.documentElement.lang = language;
+    const languageCode = document.querySelector('.language-code');
+    if (languageCode) languageCode.textContent = ({ ja: 'JA', en: 'EN', 'zh-Hant': '繁中' })[language];
     translateTree();
     toggle.setAttribute('aria-label', text('ui.chooseLanguage'));
     options.setAttribute('aria-label', text('ui.chooseLanguage'));
@@ -71,7 +73,7 @@
         image.alt = text(`ui.${type}Alt`, { title });
         const part = src.match(/-part(\d+)/);
         if (part) image.alt += text('ui.part', {
-          part: Number(part[1]), total: image.parentElement.querySelectorAll('[data-design-image]').length
+          part: Number(part[1]), total: image.closest('figure').querySelectorAll('[data-design-image]').length
         });
       });
       document.querySelectorAll('.project-live-link').forEach((link) => {

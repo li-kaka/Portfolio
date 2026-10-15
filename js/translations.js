@@ -20,9 +20,9 @@ window.PORTFOLIO_COPY = {
     "zh-Hant": "查看所有作品"
   },
   "ui.backShowcase": {
-    "ja": "大きな画像で見る",
-    "en": "Back to showcase",
-    "zh-Hant": "返回大圖展示"
+    "ja": "Showcaseで見る",
+    "en": "View showcase",
+    "zh-Hant": "查看Showcase"
   },
   "ui.allWorks": {
     "ja": "すべての作品",
@@ -53,16 +53,6 @@ window.PORTFOLIO_COPY = {
     "ja": "表示言語を選ぶ",
     "en": "Choose language",
     "zh-Hant": "選擇語言"
-  },
-  "ui.dark": {
-    "ja": "ダークモードに切り替える",
-    "en": "Switch to dark mode",
-    "zh-Hant": "切換深色模式"
-  },
-  "ui.light": {
-    "ja": "ライトモードに切り替える",
-    "en": "Switch to light mode",
-    "zh-Hant": "切換淺色模式"
   },
   "ui.chooseProject": {
     "ja": "作品を選ぶ",
@@ -245,9 +235,9 @@ window.PORTFOLIO_COPY = {
     "zh-Hant": "實際製作作品時，我發現自己很享受挑選照片、整理資訊，再把它們組合成頁面的過程，也確認了想以 Web Design 為工作的方向。我想做出讓人被畫面吸引、願意繼續看下去的網站，同時也重視它是否容易使用。"
   },
   "home.role": {
-    "ja": "Webデザイナー / デジタルデザイナー",
-    "en": "Web Designer / Digital Designer",
-    "zh-Hant": "Web Designer / Digital Designer"
+    "ja": "Web Designer",
+    "en": "Web Designer",
+    "zh-Hant": "Web Designer"
   },
   "home.location": {
     "ja": "東京・日本",
@@ -265,14 +255,14 @@ window.PORTFOLIO_COPY = {
     "zh-Hant": "整理內容與資訊順序，讓人容易理解網站的主題與目的\n透過照片、文字與版面，吸引使用者繼續瀏覽\n讓閱讀與操作清楚順暢，容易找到需要的資訊"
   },
   "home.tools": {
-    "ja": "Figma / HTML / CSS / JavaScript / PHP /\nPhotoshop / Illustrator /\nVS Code / Git / Codex",
-    "en": "Figma / HTML / CSS / JavaScript / PHP /\nPhotoshop / Illustrator /\nVS Code / Git / Codex",
-    "zh-Hant": "Figma / HTML / CSS / JavaScript / PHP /\nPhotoshop / Illustrator /\nVS Code / Git / Codex"
+    "ja": "デザイン：Figma / Photoshop / Illustrator\n実装・開発：HTML / CSS / JavaScript / VS Code / Git\n制作支援：Codex\n学習中：PHP / Python",
+    "en": "Design: Figma / Photoshop / Illustrator\nDevelopment: HTML / CSS / JavaScript / VS Code / Git\nProduction support: Codex\nCurrently learning: PHP / Python",
+    "zh-Hant": "設計：Figma / Photoshop / Illustrator\n實作與開發：HTML / CSS / JavaScript / VS Code / Git\n製作支援：Codex\n學習中：PHP / Python"
   },
   "home.languages": {
-    "ja": "広東語：母語\n中国語（普通話）：会話可能\n英語：TOEIC 795点\n日本語：JLPT N2取得",
-    "en": "Cantonese: Native\nMandarin: Conversational\nEnglish: TOEIC 795\nJapanese: JLPT N2",
-    "zh-Hant": "廣東話：母語\n普通話：可溝通\n英語：TOEIC 795 分\n日語：JLPT N2"
+    "ja": "広東語 / 中国語（普通話） / 英語 / 日本語",
+    "en": "Cantonese / Mandarin Chinese / English / Japanese",
+    "zh-Hant": "廣東話 / 普通話 / 英語 / 日語"
   },
   "home.closing": {
     "ja": "お気軽にご連絡ください。",
@@ -903,9 +893,9 @@ window.PORTFOLIO_COPY = {
     "zh-Hant": "作品集網站 · 2026/09–10"
   },
   "project.08.production": {
-    "ja": "構成・内容整理 / 写真の選定 / 画面と操作の調整 / 実機での確認\n\nHTML・CSS・JavaScriptによる実装は、主にCodexを使用しました。デザイン案や文章の整理にも活用しています。私は素材や参考デザインを用意し、提案を実際の画面で確認しながら、見た目や動き、掲載内容の修正方針を決めました。",
-    "en": "Content structure and organisation / Photo selection / Visual and interaction refinement / Testing on my phone\n\nThe HTML, CSS and JavaScript implementation was primarily completed using Codex, which also helped with design proposals and copy. I provided assets and design references, reviewed the resulting pages and decided how to revise the visuals, motion and content.",
-    "zh-Hant": "內容結構與整理 / 照片挑選 / 畫面與操作方式調整 / 手機實測\n\nHTML、CSS 和 JavaScript 的程式實作主要由 Codex 完成，設計方案與文案整理也使用了 Codex 協助。我提供素材與設計參考，查看實際畫面，再決定外觀、動態及內容的修改方向。"
+    "ja": "サイト構成、素材の選定、ビジュアルとインタラクションの方向づけ、画面の確認と調整方針の検討を担当しました。制作にはCodexを活用し、デザイン案、文章の整理、HTML・CSS・JavaScriptの実装について支援を受けました。",
+    "en": "I was responsible for the site structure, asset selection, visual and interaction direction, and reviewing the pages to decide what needed refinement. I used Codex to assist with design proposals, copy organisation, and HTML, CSS and JavaScript implementation.",
+    "zh-Hant": "我負責網站構成、素材選定、視覺與互動方向，以及畫面的檢視與調整。製作過程使用 Codex 協助設計方案、文案整理與 HTML、CSS、JavaScript 實作。"
   },
   "project.08.overview": {
     "ja": "Webデザインの就職活動に向けて、制作した作品と自分の背景をまとめたポートフォリオサイトです。作品の見た目だけでなく、制作目的や情報の並べ方、自分が担当した部分を紹介しています。",
@@ -923,19 +913,19 @@ window.PORTFOLIO_COPY = {
     "zh-Hant": "主要面向招聘 Web Designer 與 Web 制作職位的企業。兼顧想快速瀏覽所有作品，以及希望逐件了解作品的人。"
   },
   "project.08.information": {
-    "ja": "作品、自己紹介、連絡先の順に配置しました。Workでは一つずつ作品を見せ、「View all works」から一覧にも切り替えられます。詳細ページは制作範囲、目的、ターゲット、情報設計、デザインの工夫を同じ順序でまとめ、作品を見比べやすい形にしています。日本語を初期表示とし、自己紹介と作品の説明は英語・繁体字中国語にも切り替えられます。明るい場所や暗い場所など、読む環境に合わせてライトテーマとダークテーマを選べるようにしています。",
-    "en": "The page moves from work to About and then Contact. Work presents one project at a time, with View all works offering an overview. Case studies use a consistent order for scope, purpose, target, information structure and design decisions. Japanese is the default language; About and the project explanations are also available in English and Traditional Chinese. Users can choose a light or dark theme to suit their reading environment, such as a bright or dim setting.",
-    "zh-Hant": "頁面依作品、自我介紹、聯絡方式排序。Work 預設逐件展示，也可以透過 View all works 切換至一覽。詳細頁以相同順序介紹製作範圍、目的、對象、資訊設計與設計重點，方便比較。預設使用日語，自我介紹與作品說明也可切換英文及繁體中文。也提供黑白主題切換，讓使用者可配合明亮或較暗的環境，選擇適合自己的閱讀畫面。"
+    "ja": "Home、Work、About、Contactの順に配置しました。Workは一覧を初期表示とし、DesktopではShowcaseに切り替えられます。各作品の要約から詳細ページの目的と担当範囲へ進めます。日本語・英語・繁体字中国語に対応し、表示言語を保存します。スマートフォンではナビゲーションを画面下に配置しています。",
+    "en": "The page follows Home, Work, About and Contact. Work opens as a grid, with an optional desktop showcase. Short summaries lead to each project’s goals and responsibilities. Japanese, English and Traditional Chinese are available, and the selected language is saved. Mobile navigation stays at the bottom of the screen.",
+    "zh-Hant": "內容依 Home、Work、About、Contact 排列。Work 預設列表，Desktop 可切換 Showcase；從作品摘要進入詳細頁了解目的與負責範圍。支援日文、英文、繁體中文並儲存選擇。手機導覽固定在畫面下方。"
   },
   "project.08.design": {
-    "ja": "自分らしさを伝えるため、トップページには自分で撮影した海辺の写真を使いました。タイトルは空の余白にまとめ、文字の大きさや透明度を調整することで、写真の雰囲気を生かしながら文字も読めるバランスを探りました。\n\n作品を一つずつじっくり見てもらいたいと考え、Showcaseでは中央の作品を大きく、前後の作品を小さく配置しました。一方で、全体をすぐに確認したいユーザーもいるため、All worksの一覧も用意し、見方を選べるようにしています。\n\n動きは、見てもらいたい順序に合わせて設計しました。最初に写真をフェードインさせ、そのあとにタイトルを表示します。スクロールするとHeroが上へ縮小しながら消え、作品の紹介へつながります。Contactではメールアドレスを右から左へ見せる動きで、連絡先に目が向くようにしました。動きを減らす設定にも対応しています。",
-    "en": "I used my own seaside photograph on the opening page to give the portfolio a personal identity. The title sits within the open sky, with its size and opacity adjusted to keep the text readable while allowing the photograph to set the mood.\n\nI wanted each project to receive attention, so Showcase places the current project at a larger size in the centre, with smaller previews on either side. All works offers an overview for users who want to scan the full collection, allowing them to choose how to explore.\n\nThe motion follows the intended viewing order: the photograph fades in first, followed by the title. As users scroll, the Hero shrinks upwards and fades out, leading into the projects. In Contact, the email address is revealed from right to left to draw attention to the way to get in touch. The site also respects reduced-motion preferences.",
-    "zh-Hant": "以自己拍攝的海邊照片作為首頁主視覺，讓使用者先感受到我的個人風格。標題集中放在天空的留白處，並調整文字大小與透明度，讓照片與文字保持平衡。\n\n作品展示以一件作品為中心，將前後作品縮小放在兩側，希望使用者能專注觀看每件作品。同時提供 All works 一覽，讓想快速了解全部作品的人，也能自由選擇閱讀方式。\n\n動態配合頁面的觀看順序安排：先呈現照片，再帶出標題；捲動時讓 Hero 向上縮小淡出，接續作品內容。Contact 的 Email 則由右至左揭示，吸引使用者注意聯絡入口，也配合減少動態的設定調整動畫。"
+    "ja": "すっきりとした印象を保ちながら、内容が伝わり、単調にならないサイトを目指しました。雲の写真と透明感のあるUIで雰囲気をつくり、作品ごとの目的や内容をわかりやすく伝えることを大切にしました。\n制作中は、情報の並びや操作の流れを実際の画面で繰り返し確認しました。読み進めにくい箇所や伝わりにくい表現を見直し、Codexに修正を依頼して再確認する作業を重ねました。",
+    "en": "I aimed for a clean presentation that communicates the content without feeling monotonous. Cloud photography and transparent UI set the atmosphere, while the project descriptions explain the purpose and content of each work.\nThroughout production, I repeatedly reviewed the information order and interaction flow on the actual pages. I identified awkward reading flows and unclear wording, asked Codex to make revisions, and reviewed the results again.",
+    "zh-Hant": "希望在清爽的視覺中保留內容與層次，讓網站不顯單調。以雲的照片與透明感 UI 建立氛圍，同時讓使用者清楚了解這份作品集，以及每件作品的目的與內容。\n製作過程中，我反覆檢視實際畫面的資訊排列與操作流程，找出閱讀不順或表達不清楚的地方，再請 Codex 修改並重新確認，逐步完成這份作品。"
   },
   "project.08.period": {
-    "ja": "約14日間",
-    "en": "About 14 days",
-    "zh-Hant": "約14天"
+    "ja": "約14日間\n企画・ワイヤーフレーム：3日\nデザイン：5日\n実装：6日",
+    "en": "About 14 days\nPlanning and wireframing: 3 days\nDesign: 5 days\nImplementation: 6 days",
+    "zh-Hant": "約14天\n企劃與 Wireframe：3天\n設計：5天\n實作：6天"
   },
   "project.08.views": {
     "ja": "パソコンでは、作品を一つずつ見るShowcaseと、全作品を確認できるAll worksを切り替えられます。スマートフォンでは一覧だけを表示し、通常のスクロールで作品を探せるようにしています。",
@@ -971,5 +961,125 @@ window.PORTFOLIO_COPY = {
     "ja": "スマートフォン版の初期案です。画像はShowcaseを採用していた時点のものです。現在は作品を探しやすいよう、All worksの一覧表示に変更しています。",
     "en": "Earlier mobile design with Showcase. The current mobile site uses the All works overview instead, so users can browse projects more directly.",
     "zh-Hant": "手機版初期設計圖，展示當時使用 Showcase 的版本。目前已改為 All works 一覽，讓使用者更直接地瀏覽作品。"
+  },
+  "home.heroIntro": {
+    "ja": "Li Pui Ka / リプイカ · Web Designer",
+    "en": "Li Pui Ka · Web Designer",
+    "zh-Hant": "Li Pui Ka · Web Designer"
+  },
+  "home.heroDetail": {
+    "ja": "情報を整理し、伝わる画面をつくる。\nHAL東京 WEB学科 · 2027年3月卒業予定",
+    "en": "Clear information. Thoughtful interfaces.\nHAL Tokyo · Expected graduation March 2027",
+    "zh-Hant": "整理資訊，設計清楚易用的介面。\nHAL 東京 · 預計2027年3月畢業"
+  },
+  "home.heroCTA": {
+    "ja": "作品を見る",
+    "en": "Explore my work",
+    "zh-Hant": "查看作品"
+  },
+  "home.motionPause": {
+    "ja": "動きを一時停止",
+    "en": "Pause animation",
+    "zh-Hant": "暫停動畫"
+  },
+  "home.motionPlay": {
+    "ja": "動きを再生",
+    "en": "Play animation",
+    "zh-Hant": "播放動畫"
+  },
+  "project.04.summary": {
+    "ja": "条件から行き先を選ぶ、スキー場比較と診断。",
+    "en": "Resort comparison and a three-question recommendation quiz.",
+    "zh-Hant": "透過比較與三題診斷，選擇合適的滑雪場。"
+  },
+  "project.03.summary": {
+    "ja": "商品・価格・アクセスを、来店前に確認できる店舗サイト。",
+    "en": "A shop website for checking products, prices and access.",
+    "zh-Hant": "到店前確認商品、價格與交通的店舗網站。"
+  },
+  "project.07.summary": {
+    "ja": "写真から伝統色を知る、季節別のカタログ。",
+    "en": "A seasonal catalogue connecting photography and traditional colours.",
+    "zh-Hant": "從照片認識傳統色的季節目錄。"
+  },
+  "project.01.summary": {
+    "ja": "初めての校舎で、教室への行き方を確認するUI。",
+    "en": "An interface for finding a classroom in an unfamiliar campus.",
+    "zh-Hant": "在陌生校舍確認教室路線的導覽介面。"
+  },
+  "project.06.summary": {
+    "ja": "章ごとの導線と時間の流れで見せる、街歩きの記録。",
+    "en": "An editorial journey through a town, organised by chapter and time.",
+    "zh-Hant": "以章節導覽與時間順序呈現街歩記錄。"
+  },
+  "project.05.summary": {
+    "ja": "写真・花期・撮影地で見比べる、桜の記録。",
+    "en": "A cherry blossom collection with photos, flowering periods and locations.",
+    "zh-Hant": "結合照片、花期與拍攝地點的櫻花記錄。"
+  },
+  "project.02.summary": {
+    "ja": "料理と店舗情報をまとめた、初期のDesktop課題。",
+    "en": "An early desktop assignment presenting a café and its menu.",
+    "zh-Hant": "整理料理與店舗資訊的早期Desktop課題。"
+  },
+  "project.08.summary": {
+    "ja": "作品の比較から、制作意図と担当範囲へ。",
+    "en": "From comparing projects to understanding decisions and responsibilities.",
+    "zh-Hant": "從比較作品，到了解設計決定與負責範圍。"
+  },
+  "ui.designDecision": {
+    "ja": "設計のポイント",
+    "en": "Design decisions",
+    "zh-Hant": "設計決定"
+  },
+  "ui.successGoal": {
+    "ja": "目指す体験",
+    "en": "Intended experience",
+    "zh-Hant": "預期使用體驗"
+  },
+  "ui.zoom": {
+    "ja": "画像を拡大する",
+    "en": "Enlarge image",
+    "zh-Hant": "放大圖片"
+  },
+  "ui.closeImage": {
+    "ja": "画像を閉じる",
+    "en": "Close image",
+    "zh-Hant": "關閉圖片"
+  },
+  "project.04.goal": {
+    "ja": "スキー場を比較するか、三問の診断から候補を選び、紹介へ進めること。",
+    "en": "Compare resorts or answer three questions, then open a suggested resort.",
+    "zh-Hant": "可比較滑雪場或回答三題診斷，再進入建議地點的介紹。"
+  },
+  "project.03.goal": {
+    "ja": "商品と価格を確認したあと、営業時間と場所を探せること。",
+    "en": "Check products and prices, then find opening hours and location.",
+    "zh-Hant": "確認商品及價格後，可以找到營業時間與位置。"
+  },
+  "project.07.goal": {
+    "ja": "季節から気になる色を選び、一覧を離れずに説明を読めること。",
+    "en": "Choose a colour by season and read its details without leaving the catalogue.",
+    "zh-Hant": "從季節選擇顏色，不離開目錄即可閱讀詳情。"
+  },
+  "project.04.decision": {
+    "ja": "自分で比較したい人と、選び方が分からない人を分けて考え、一覧と診断の二つの入口を用意しました。診断では目的・経験・同行者を二択で聞き、結果から該当するスキー場紹介へ進めます。",
+    "en": "Two entry points support different needs: compare resorts directly or get a suggestion. The quiz asks about purpose, experience and companions; its result links to the relevant resort.",
+    "zh-Hant": "提供自行比較與診斷推薦兩種入口。診斷詢問目的、經驗及同行者，結果連到對應滑雪場介紹。"
+  },
+  "project.03.decision": {
+    "ja": "雰囲気を伝える写真だけで終わらないよう、MENUに商品名・価格・説明をまとめ、ADDRESSに営業時間と所在地を置きました。電話と地図への入口を加え、情報の確認から来店準備へ進める構成にしています。",
+    "en": "Product names, prices and descriptions are grouped in MENU; opening hours and location appear in ADDRESS. Phone and map links support the next step after reading.",
+    "zh-Hant": "MENU集中商品名稱、價格與描述，ADDRESS列出營業時間及地址。加入電話與地圖入口，讓閱讀資訊連到到店準備。"
+  },
+  "project.07.decision": {
+    "ja": "一覧では写真・色名・色コードに情報を絞り、詳しい説明はDialogに分けました。季節別ページからも探せます。実際の色は色票で示し、文字には読みやすい濃い色を使っています。",
+    "en": "The catalogue presents photography, names and codes; longer explanations open in a dialog. Seasonal pages offer another browsing path. Swatches retain the actual colours while text uses readable dark tones.",
+    "zh-Hant": "列表呈現照片、色名與色碼，詳細解說使用Dialog。也能由季節頁尋找。色票保留實際顏色，文字使用可讀的深色。"
+  },
+  "home.workTagline": {
+    "ja": "「アイデアを、Webの体験へ。」",
+    "en": "“Turning ideas into web experiences.”",
+    "zh-Hant": "「把想法轉化為網頁體驗。」"
   }
 };

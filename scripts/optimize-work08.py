@@ -21,7 +21,7 @@ with Image.open(source) as image:
     variants = []
     for width in [600, 960, 1600]:
         resized = image.resize((width, round(image.height * width / image.width)), Image.Resampling.LANCZOS)
-        variants.append(save(resized, f'mockup08-{width}.webp'))
+        variants.append(save(resized, f'mockup08-v3-{width}.webp'))
     manifest[source.name] = {'original_bytes': source.stat().st_size, 'variants': variants}
 
 for name in ['work08_designcomp', 'work08_designcomp_work', 'work08_designcomp_mobile']:

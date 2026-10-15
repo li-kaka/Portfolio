@@ -1,0 +1,66 @@
+[
+  {
+    "source": "image/About_snowboarding.JPG",
+    "output": "image/optimized/about-snowboarding-960.webp",
+    "before": 1525275,
+    "after": 103136,
+    "width": 960,
+    "height": 1707
+  },
+  {
+    "source": "image/About_cats.JPG",
+    "output": "image/optimized/about-cats-960.webp",
+    "before": 2143914,
+    "after": 165452,
+    "width": 960,
+    "height": 1280
+  },
+  {
+    "source": "image/About_cooking.JPG",
+    "output": "image/optimized/about-cooking-960.webp",
+    "before": 2992649,
+    "after": 131866,
+    "width": 960,
+    "height": 960
+  },
+  {
+    "source": "image/About_photography.jpg",
+    "output": "image/optimized/about-photography-v2-960.webp",
+    "before": 12141558,
+    "after": 249284,
+    "width": 960,
+    "height": 1280
+  },
+  {
+    "source": "image/About_travel.JPG",
+    "output": "image/optimized/about-travel-960.webp",
+    "before": 2460119,
+    "after": 337342,
+    "width": 960,
+    "height": 1707
+  },
+  {
+    "source": "image/About_music.jpg",
+    "output": "image/optimized/about-music-960.webp",
+    "before": 352567,
+    "after": 23996,
+    "width": 500,
+    "height": 500
+  },
+  {
+    "source": "image/optimized/personal-cloud-sky.png",
+    "output": "image/optimized/personal-cloud-sky.webp",
+    "before": 1680203,
+    "after": 45220,
+    "width": 1672,
+    "height": 941
+  },
+  {
+    "source": "image/optimized/personal-cloud-layer.png",
+    "output": "image/optimized/personal-cloud-layer.webp",
+    "before": 1302336,
+    "after": 162778,
+    "width": 1600,
+    "height": 662
+  }
+]

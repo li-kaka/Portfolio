@@ -1,0 +1,26 @@
+.project-summary { margin: 10px 0 0; max-width: 38ch; font-size: 15px; line-height: 1.7; color: var(--muted); }
+.work-section.is-overview .work-stage { height: auto; }
+.works-overview-card { border-radius: 6px; text-decoration: none; }
+
+.works-overview-toggle { font-size: 13px; }
+.bio, .profile-details p { font-size: 16px; }
+.project-fact dd { font-size: 16px; line-height: 1.9; }
+.detail-heading p, .project-live-link { font-size: 14px; }
+.project-live-link { min-height: 44px; }
+.design-zoom { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+.design-zoom img { display: block; width: 100%; }
+.design-dialog { width: min(1200px, calc(100% - 32px)); max-height: calc(100dvh - 32px); margin: auto; padding: 48px 16px 16px; border: 0; border-radius: 8px; background: var(--bg); color: var(--text); }
+.design-dialog::backdrop { background: #000b; }
+.design-dialog img { width: 100%; height: auto; }
+.design-dialog button { position: sticky; top: 0; float: right; min-width: 44px; min-height: 44px; border: 1px solid var(--line); border-radius: 50%; background: var(--bg); color: var(--text); cursor: pointer; }
+.decision-note { margin-top: 22px; font-size: 16px; line-height: 1.9; }
+@media (max-width: 620px) { .final-design-mobile { width: 100%; max-width: 420px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .hero-work-link { transition: none; } }
+
+.current-preview iframe { display: block; width: 100%; height: 720px; margin-top: 32px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); }
+
+.current-preview > img { display: block; width: 100%; height: auto; margin-top: 32px; border: 1px solid var(--line); }
+.final-design-grid { display: grid; gap: 36px; margin-top: 32px; }
+.final-design-grid figure { margin: 0; min-width: 0; }
+.final-design-grid figcaption { margin-bottom: 12px; color: var(--muted); font-size: 14px; }
+.final-design-grid .final-design-mobile { width: min(100%, 420px); justify-self: center; }

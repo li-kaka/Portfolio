@@ -7,82 +7,6 @@
   const text = (key, values = {}) => window.PortfolioLanguage.text(key, values, 'en');
   const projectKey = (project) => `project.${project.url.match(/work(\d+)/)[1]}`;
   const projectName = (project) => text(`${projectKey(project)}.name`);
-  const hero = document.querySelector('.hero');
-  const heroImage = document.querySelector('.hero-image');
-
-  if (hero && heroImage) {
-    const header = document.querySelector('[data-header]');
-    const work = document.querySelector('#work');
-    const heroExitMotion = window.matchMedia('(prefers-reduced-motion: no-preference)');
-    root.classList.toggle('has-hero-exit', heroExitMotion.matches);
-    let headerFrame = null;
-    const syncHeroHeader = () => {
-      const workTop = work.getBoundingClientRect().top;
-      const headerOnPhoto = workTop > header.offsetHeight &&
-        (!heroExitMotion.matches || workTop >= hero.offsetHeight - 1);
-      header.classList.toggle('is-over-hero', headerOnPhoto);
-      if (heroExitMotion.matches) {
-        const distance = Math.max(0, hero.offsetHeight - workTop);
-        const progress = Math.min(1, distance / (hero.offsetHeight * .9));
-        hero.classList.toggle('is-exiting', progress > 0);
-        hero.style.setProperty('--hero-exit-scale', 1 - progress);
-        hero.style.setProperty('--hero-exit-opacity', 1 - progress * progress);
-      }
-      headerFrame = null;
-    };
-    const queueHeaderUpdate = () => {
-      if (headerFrame === null) headerFrame = window.requestAnimationFrame(syncHeroHeader);
-    };
-    window.addEventListener('scroll', queueHeaderUpdate, { passive: true });
-    window.addEventListener('resize', queueHeaderUpdate);
-    heroExitMotion.addEventListener('change', () => {
-      root.classList.toggle('has-hero-exit', heroExitMotion.matches);
-      hero.style.removeProperty('--hero-exit-scale');
-      hero.style.removeProperty('--hero-exit-opacity');
-      hero.classList.remove('is-exiting');
-      queueHeaderUpdate();
-    });
-    syncHeroHeader();
-
-    const startHeroIntro = () => hero.classList.add('is-intro-ready');
-    if (root.classList.contains('is-loading')) {
-      window.addEventListener('portfolio:ready', startHeroIntro, { once: true });
-    } else if (heroImage.complete) startHeroIntro();
-    else {
-      heroImage.addEventListener('load', startHeroIntro, { once: true });
-      heroImage.addEventListener('error', startHeroIntro, { once: true });
-    }
-
-    const heroPointerMotion = window.matchMedia('(min-width: 821px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
-    let pointerFrame = null;
-    let pointerX = 0;
-    let pointerY = 0;
-
-    function resetHeroPointer() {
-      window.cancelAnimationFrame(pointerFrame);
-      pointerFrame = null;
-      hero.style.removeProperty('--hero-pointer-x');
-      hero.style.removeProperty('--hero-pointer-y');
-    }
-
-    hero.addEventListener('pointermove', (event) => {
-      if (!heroPointerMotion.matches || event.pointerType !== 'mouse') return;
-      const bounds = hero.getBoundingClientRect();
-      pointerX = ((event.clientX - bounds.left) / bounds.width - .5) * 12;
-      pointerY = ((event.clientY - bounds.top) / bounds.height - .5) * 8;
-
-      if (pointerFrame !== null) return;
-      pointerFrame = window.requestAnimationFrame(() => {
-        hero.style.setProperty('--hero-pointer-x', `${pointerX}px`);
-        hero.style.setProperty('--hero-pointer-y', `${pointerY}px`);
-        pointerFrame = null;
-      });
-    });
-    hero.addEventListener('pointerleave', resetHeroPointer);
-    heroPointerMotion.addEventListener('change', resetHeroPointer);
-  }
-
-  const themeButton = document.querySelector('[data-theme-toggle]');
   const emailLink = document.querySelector('.email-link');
   const emailText = emailLink?.querySelector('.email-text');
   if (emailText && !reducedMotion.matches) {
@@ -108,9 +32,7 @@
     const observeEmail = () => {
       if (!hasRevealedEmail) emailObserver.observe(emailLink);
     };
-    if (root.classList.contains('is-loading')) {
-      window.addEventListener('portfolio:ready', observeEmail, { once: true });
-    } else observeEmail();
+    observeEmail();
     emailLink.addEventListener('focus', showEmail, { once: true });
     reducedMotion.addEventListener('change', (event) => {
       if (event.matches) showEmail();
@@ -132,54 +54,53 @@
 
   const projects = [
     {
-      image: 'image/optimized/mockup07-1600.webp?v=20261012-ordered',
-      width: 1600,
-      height: 1012,
-      url: 'work07.html'
+        "image": "image/optimized/mockup04-1600.webp?v=20261012-ordered",
+        "width": 1600,
+        "height": 1012,
+        "url": "work04.html"
     },
     {
-      image: 'image/optimized/mockup06-1600.webp?v=20261012-inage-sea',
-      width: 1600,
-      height: 1012,
-      url: 'work06.html'
+        "image": "image/optimized/mockup03-1600.webp?v=20261012-ordered",
+        "width": 1600,
+        "height": 919,
+        "url": "work03.html"
     },
     {
-      image: 'image/optimized/mockup05-1600.webp?v=20261012-ordered',
-      width: 1600,
-      height: 1012,
-      url: 'work05.html'
+        "image": "image/optimized/mockup07-1600.webp?v=20261012-ordered",
+        "width": 1600,
+        "height": 1012,
+        "url": "work07.html"
     },
     {
-      image: 'image/optimized/mockup04-1600.webp?v=20261012-ordered',
-      width: 1600,
-      height: 1012,
-      url: 'work04.html'
+        "image": "image/optimized/mockup01-1600.webp?v=20261012-ordered",
+        "width": 1600,
+        "height": 919,
+        "url": "work01.html"
     },
     {
-      image: 'image/optimized/mockup03-1600.webp?v=20261012-ordered',
-      width: 1600,
-      height: 919,
-      url: 'work03.html'
+        "image": "image/optimized/mockup06-v2-1600.webp?v=20261012-inage-sea",
+        "width": 1600,
+        "height": 1012,
+        "url": "work06.html"
     },
     {
-      image: 'image/optimized/mockup02-1600.webp?v=20261012-ordered',
-      width: 1600,
-      height: 919,
-      url: 'work02.html'
+        "image": "image/optimized/mockup05-1600.webp?v=20261012-ordered",
+        "width": 1600,
+        "height": 1012,
+        "url": "work05.html"
     },
     {
-      image: 'image/optimized/mockup01-1600.webp?v=20261012-ordered',
-      width: 1600,
-      height: 919,
-      url: 'work01.html'
+        "image": "image/optimized/mockup02-1600.webp?v=20261012-ordered",
+        "width": 1600,
+        "height": 919,
+        "url": "work02.html"
     },
     {
-      image: 'image/optimized/mockup08-1600.webp?v=20261012-ordered',
-      width: 1600,
-      height: 1012,
-      url: 'work08.html'
+        "image": "image/optimized/mockup08-v3-1600.webp?v=20261015-mockup08",
+        "width": 1600, "height": 1012,
+        "url": "work08.html"
     }
-  ];
+];
 
   let activeProject = 0;
   let isProjectAnimating = false;
@@ -187,37 +108,39 @@
   let projectContentTimer;
   let projectAnimationTimer;
 
-  function syncThemeControl() {
-    const darkMode = root.dataset.theme === 'dark';
-    themeButton.setAttribute('aria-pressed', String(darkMode));
-    themeButton.setAttribute('aria-label', text(darkMode ? 'ui.light' : 'ui.dark'));
-  }
+  let navigationFrame = 0;
 
-  syncThemeControl();
+  function syncActiveSection() {
+    navigationFrame = 0;
+    if (!navLinks.length || !observedSections.length) return;
 
-  themeButton.addEventListener('click', () => {
-    const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-    root.dataset.theme = nextTheme;
-    try { localStorage.setItem('portfolio-theme', nextTheme); } catch { /* Optional preference. */ }
-    syncThemeControl();
-  });
-
-  const sectionObserver = new IntersectionObserver((entries) => {
-    const visibleEntry = entries
-      .filter((entry) => entry.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-    if (!visibleEntry) return;
+    const marker = window.innerHeight * 0.35;
+    const atBottom = window.scrollY > 0 &&
+      window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
+    let activeSection = observedSections[0];
+    observedSections.forEach((section) => {
+      if (section.getBoundingClientRect().top <= marker) activeSection = section;
+    });
+    // A short final section may never reach the viewport marker.
+    if (atBottom) activeSection = observedSections[observedSections.length - 1];
 
     navLinks.forEach((link) => {
-      const isActive = link.dataset.sectionLink === visibleEntry.target.id;
+      const isActive = link.dataset.sectionLink === activeSection.id;
       link.classList.toggle('is-active', isActive);
       if (isActive) link.setAttribute('aria-current', 'location');
       else link.removeAttribute('aria-current');
     });
-  }, { rootMargin: '-25% 0px -55%', threshold: [0, 0.1, 0.4] });
+  }
 
-  observedSections.forEach((section) => sectionObserver.observe(section));
+  function scheduleNavigation() {
+    if (!navigationFrame) navigationFrame = window.requestAnimationFrame(syncActiveSection);
+  }
+
+  window.addEventListener('scroll', scheduleNavigation, { passive: true });
+  window.addEventListener('resize', scheduleNavigation);
+  window.addEventListener('load', scheduleNavigation);
+  document.addEventListener('portfolio:introend', scheduleNavigation);
+  syncActiveSection();
 
   function getCard(role) {
     return projectCards.find((card) => card.classList.contains(`project-card--${role}`));
@@ -229,7 +152,7 @@
 
     card.dataset.projectIndex = String(index);
     image.src = project.image;
-    image.srcset = `${project.image.replace('-1600.webp', '-600.webp')} 600w, ${project.image.replace('-1600.webp', '-960.webp')} 960w, ${project.image} 1600w`;
+    image.srcset = project.image.includes('-1600.webp') ? `${project.image.replace('-1600.webp', '-600.webp')} 600w, ${project.image.replace('-1600.webp', '-960.webp')} 960w, ${project.image} 1600w` : '';
     image.sizes = role === 'main'
       ? '(max-width: 620px) calc(100vw - 24px), (max-width: 820px) 72vw, (max-width: 1245px) 61vw, 760px'
       : '(max-width: 820px) 38vw, 400px';
@@ -369,8 +292,8 @@
 
   if (overviewButton && overviewGrid) {
     const mobileWork = window.matchMedia('(max-width: 620px)');
-    let showcaseScrollPosition = 0;
-    let desktopOverview = false;
+    let showcaseScrollPosition = null;
+    let desktopOverview = true;
 
     function buildOverview() {
       if (overviewGrid.childElementCount) return;
@@ -379,11 +302,12 @@
         const image = document.createElement('img');
         const title = document.createElement('strong');
         const meta = document.createElement('small');
+        const summary = document.createElement('p');
 
         link.className = 'works-overview-card';
         link.href = project.url;
         image.src = project.image.replace('-1600.webp', '-600.webp');
-        image.srcset = `${image.getAttribute('src')} 600w, ${project.image.replace('-1600.webp', '-960.webp')} 960w`;
+        image.srcset = project.image.includes('-1600.webp') ? `${image.getAttribute('src')} 600w, ${project.image.replace('-1600.webp', '-960.webp')} 960w` : '';
         image.sizes = '(max-width: 620px) calc(100vw - 40px), (max-width: 820px) 44vw, 30vw';
         image.width = project.width;
         image.height = project.height;
@@ -399,7 +323,10 @@
         meta.dataset.i18nLang = 'en';
         meta.lang = 'en';
         meta.textContent = text(meta.dataset.i18n);
-        link.append(image, title, meta);
+        summary.className = 'project-summary';
+        summary.dataset.i18n = `${projectKey(project)}.summary`;
+        summary.textContent = window.PortfolioLanguage.text(summary.dataset.i18n);
+        link.append(image, title, meta, summary);
         overviewGrid.append(link);
       });
     }
@@ -427,14 +354,16 @@
       desktopOverview = opening;
       setWorkView(opening);
 
-      const overviewTop = window.scrollY + workSection.getBoundingClientRect().top;
+      const workTop = window.scrollY + workSection.getBoundingClientRect().top;
       const headerHeight = parseFloat(getComputedStyle(root).getPropertyValue('--header-height'));
-      window.scrollTo({ top: opening ? overviewTop - headerHeight : showcaseScrollPosition, behavior: 'instant' });
+      const start = Math.max(0, workTop - headerHeight);
+      const end = Math.max(start, workTop + workSection.offsetHeight - window.innerHeight);
+      const destination = opening ? start : Math.min(end, Math.max(start, showcaseScrollPosition ?? start));
+      window.scrollTo({ top: destination, behavior: 'instant' });
     });
   }
 
   function syncLanguage() {
-    syncThemeControl();
     if (!projectTitle) return;
     updateProjectContent(activeProject);
     syncProjectControls();
@@ -451,6 +380,11 @@
     translateTree(overviewGrid);
   }
 
+  if (projectCards.length) {
+    setCardProject(getCard('main'), 0, 'main');
+    setCardProject(getCard('previous'), projects.length - 1, 'previous');
+    setCardProject(getCard('next'), 1, 'next');
+  }
   syncLanguage();
   document.addEventListener('portfolio:languagechange', syncLanguage);
 
@@ -468,4 +402,19 @@
       projectSteps[index].scrollIntoView({ behavior: reducedMotion.matches ? 'auto' : 'smooth', block: 'center' });
     });
   });
+  const homeTop = document.querySelector('[data-home-top]');
+  if (homeTop) {
+    const syncHomeTop = () => { homeTop.hidden = window.scrollY < window.innerHeight; };
+    window.addEventListener('scroll', syncHomeTop, { passive: true });
+    window.addEventListener('resize', syncHomeTop);
+    homeTop.addEventListener('click', (event) => {
+      if (reducedMotion.matches) {
+        event.preventDefault();
+        history.replaceState(null, '', '#home');
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }
+      if (event.detail === 0) document.querySelector('.site-nav a[href="#home"]')?.focus({ preventScroll: true });
+    });
+    syncHomeTop();
+  }
 })();

@@ -8,53 +8,52 @@
   if (!allWorksGrid || !currentProjectId) return;
 
   const projects = [
-    {
-      id: '07',
-      image: 'image/optimized/mockup07-1600.webp?v=20261012-ordered',
-      width: 1600,
-      height: 1012,
-    },
-    {
-      id: '06',
-      image: 'image/optimized/mockup06-1600.webp?v=20261012-inage-sea',
-      width: 1600,
-      height: 1012,
-    },
-    {
-      id: '05',
-      image: 'image/optimized/mockup05-1600.webp?v=20261012-ordered',
-      width: 1600,
-      height: 1012,
-    },
-    {
+{
       id: '04',
       image: 'image/optimized/mockup04-1600.webp?v=20261012-ordered',
       width: 1600,
       height: 1012,
     },
-    {
+{
       id: '03',
       image: 'image/optimized/mockup03-1600.webp?v=20261012-ordered',
       width: 1600,
       height: 919,
     },
-    {
-      id: '02',
-      image: 'image/optimized/mockup02-1600.webp?v=20261012-ordered',
+{
+      id: '07',
+      image: 'image/optimized/mockup07-1600.webp?v=20261012-ordered',
       width: 1600,
-      height: 919,
+      height: 1012,
     },
-    {
+{
       id: '01',
       image: 'image/optimized/mockup01-1600.webp?v=20261012-ordered',
       width: 1600,
       height: 919,
     },
-    {
-      id: '08',
-      image: 'image/optimized/mockup08-1600.webp?v=20261012-ordered',
+{
+      id: '06',
+      image: 'image/optimized/mockup06-v2-1600.webp?v=20261012-inage-sea',
       width: 1600,
       height: 1012,
+    },
+{
+      id: '05',
+      image: 'image/optimized/mockup05-1600.webp?v=20261012-ordered',
+      width: 1600,
+      height: 1012,
+    },
+{
+      id: '02',
+      image: 'image/optimized/mockup02-1600.webp?v=20261012-ordered',
+      width: 1600,
+      height: 919,
+    },
+{
+      id: '08',
+      image: 'image/optimized/mockup08-v3-1600.webp?v=20261015-mockup08',
+      width: 1600, height: 1012,
     }
   ];
 
@@ -72,7 +71,7 @@
       link.setAttribute('aria-label', text('ui.details', { title: text(`project.${project.id}.name`) }));
 
       image.src = project.image.replace('-1600.webp', '-600.webp');
-      image.srcset = `${image.getAttribute('src')} 600w, ${project.image.replace('-1600.webp', '-960.webp')} 960w`;
+      image.srcset = project.image.includes('-1600.webp') ? `${image.getAttribute('src')} 600w, ${project.image.replace('-1600.webp', '-960.webp')} 960w` : '';
       image.sizes = '(max-width: 620px) calc(100vw - 96px), (max-width: 820px) 32vw, 400px';
       image.width = project.width;
       image.height = project.height;

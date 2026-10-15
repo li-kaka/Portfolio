@@ -1,0 +1,37 @@
+[
+  {
+    "source": "portfolio-new-home-desktop.png",
+    "output": "image/optimized/portfolio-ui-home.webp",
+    "width": 1024,
+    "height": 900,
+    "bytes": 43308
+  },
+  {
+    "source": "portfolio-new-work-desktop.png",
+    "output": "image/optimized/portfolio-ui-work.webp",
+    "width": 1024,
+    "height": 900,
+    "bytes": 71880
+  },
+  {
+    "source": "portfolio-new-about-desktop.png",
+    "output": "image/optimized/portfolio-ui-about.webp",
+    "width": 1024,
+    "height": 900,
+    "bytes": 73134
+  },
+  {
+    "source": "portfolio-new-contact-desktop.png",
+    "output": "image/optimized/portfolio-ui-contact.webp",
+    "width": 1024,
+    "height": 900,
+    "bytes": 42382
+  },
+  {
+    "source": "portfolio-new-home-mobile.png",
+    "output": "image/optimized/portfolio-ui-mobile.webp",
+    "width": 375,
+    "height": 812,
+    "bytes": 18304
+  }
+]

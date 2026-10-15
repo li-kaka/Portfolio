@@ -4,10 +4,6 @@
   --detail-accent: #044060;
 }
 
-:root[data-theme="dark"] .work-detail-page {
-  --detail-accent: var(--text);
-}
-
 .work-detail-main {
   padding-top: var(--header-height);
 }
@@ -76,10 +72,6 @@
 .project-live-link:hover span,
 .project-live-link:focus-visible span {
   border-color: currentColor;
-}
-
-:root[data-theme="dark"] .project-live-link img {
-  filter: invert(1);
 }
 
 .detail-hero-image {
@@ -536,7 +528,7 @@
 
   .work-preview {
     min-height: 0;
-    aspect-ratio: 1.35;
+    aspect-ratio: auto;
     padding: 18px 28px 16px;
   }
 
