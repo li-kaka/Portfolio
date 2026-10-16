@@ -56,10 +56,7 @@
     });
   }, { threshold: .12 });
 
-  cards.forEach((card, index) => {
-    card.style.setProperty('--work-delay', `${[40, 230, 110, 360, 170, 70, 290, 140][index % 8]}ms`);
-    card.style.setProperty('--work-duration', `${[1500, 1800, 1650, 1950][index % 4]}ms`);
-    card.style.setProperty('--work-flicker', index % 2 ? 'work-lamp-b' : 'work-lamp-a');
+  cards.forEach((card) => {
     card.classList.add('has-work-reveal');
     observer.observe(card);
     card.addEventListener('focusin', () => {

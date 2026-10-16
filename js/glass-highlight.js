@@ -124,9 +124,10 @@
     nav.prepend(slider);
     const slideTo = (link) => {
       if (!link) return;
+      const inset = parseFloat(getComputedStyle(nav).getPropertyValue('--nav-slider-inset')) || 0;
       slider.style.width = `${link.offsetWidth}px`;
-      slider.style.height = `${link.offsetHeight}px`;
-      slider.style.transform = `translate(${link.offsetLeft}px, ${link.offsetTop}px)`;
+      slider.style.height = `${link.offsetHeight - inset * 2}px`;
+      slider.style.transform = `translate(${link.offsetLeft}px, ${link.offsetTop + inset}px)`;
     };
     const showActive = () => slideTo(nav.querySelector('a.is-active') || links[0]);
     links.forEach((link) => {
